@@ -27,7 +27,7 @@ if (__name__ == '__main__'):
         # set (setting, bData) <
         # iterate (repository per user) <
         setting = requestsGet(pLink = gSettingLink)
-        bData = {'topic' : setting['topic'], 'language' : setting['language']['add']}
+        bData = {'language' : setting['language']['add'], 'topic' : setting['topic']['add']}
         for r in [r for u in setting['user']['add'] for r in gGithub.get_user(u).get_repos()]:
 
             # if (valid project) <
