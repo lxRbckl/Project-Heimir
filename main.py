@@ -2,9 +2,7 @@
 
 
 # import <
-from time import sleep
 from github import Github
-from asyncio import sleep
 from discord import Intents
 from datetime import datetime as dt
 from discord.ext import commands, tasks
