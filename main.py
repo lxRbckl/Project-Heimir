@@ -58,7 +58,7 @@ async def getData() -> None:
                     'description' : r.description if (r.description) else 'None',
                     'feedSubject' : list(feed['content'].keys()) if (feed) else [],
                     'topic' : [t for t in r.get_topics() if (t not in setting['topic']['remove'])],
-                    'update' : dt.strptime(str(r.pushed_at).split(' ')[0], '%Y-%m-%-d').strftime('%B %d %Y'),
+                    'update' : dt.strptime(str(r.pushed_at).split(' ')[0], '%Y-%m-%d').strftime('%B %-d %Y'),
                     'language' : [l for l in r.get_languages().keys() if (l not in setting['language']['remove'])],
                     'feedLink' : f'https://raw.githubusercontent.com/{r.full_name}/main/feed.json' if (feed) else 'None'
 
