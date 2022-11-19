@@ -33,7 +33,13 @@ async def getData() -> None:
     global gData
 
     setting = requestsGet(pLink = gSettingLink)
-    tData = {'language' : setting['language']['add'], 'topic' : setting['topic']['add']}
+    tData = {
+
+        'toolkit' : setting['toolkit'],
+        'topic' : setting['topic']['add'],
+        'language' : setting['language']['add']
+
+    }
     for r in [r for u in setting['user']['add'] for r in gGithub.get_user(u).get_repos()]:
 
         # if (valid project) <
