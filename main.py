@@ -11,7 +11,7 @@ from lxRbckl import requestsGet, githubGet, githubSet
 # >
 
 
-# local <
+# global <
 githubToken = ''
 discordToken = ''
 
