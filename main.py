@@ -35,7 +35,6 @@ async def getData() -> None:
     setting = requestsGet(pLink = gSettingLink)
     tData = {
 
-        'toolkit' : setting['toolkit'],
         'library' : setting['library']['add'],
         'language' : setting['language']['add']
 
