@@ -1,2 +1,2 @@
-## [`Project Heimir`](http://lxrbckl.com/Project-Heimir)
-> Keep your portfolio up to date with scheduled updates. Fall 2022.
+### `Project Heimir`
+> Maintain currency of your portfolio database with consistent updates. Fall 2022.
