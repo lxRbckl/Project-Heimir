@@ -1,2 +1,2 @@
 ### `Project Heimir`
-> Maintain currency of your portfolio database with consistent updates. Fall 2022.
+> Maintain currency of your portfolio database with consistent updates. Winter 2024.
