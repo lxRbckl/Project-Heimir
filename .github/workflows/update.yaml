@@ -1,0 +1,44 @@
+name: Build and Push Docker Image
+
+
+on:
+  push:
+    branches:
+      - Project-Heimir-2
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    env:
+      DOCKERPROJECT: "project-heimir"
+
+    steps:
+      - name: Evaluate Commit Message
+        run: |
+
+          commitMessage="${{ github.event.head_commit.message }}";
+
+          if [ "$commitMessage" != "Update" ]; then
+
+             echo "Cancelling Workflow.";
+             exit 1;
+
+          fi
+      
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Login to Docker Registry
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUBUSERNAME }}
+          password: ${{ secrets.DOCKERHUBTOKEN }}
+
+      - name: Build and Push Docker Image
+        run: |
+            docker build -t ${{ env.DOCKERPROJECT }} .
+
+            docker tag ${{ env.DOCKERPROJECT }} ${{ secrets.DOCKERHUBUSERNAME }}/${{ env.DOCKERPROJECT }}:latest
+            docker push ${{ secrets.DOCKERHUBUSERNAME }}/${{ env.DOCKERPROJECT }}:latest
