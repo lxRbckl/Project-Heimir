@@ -1,20 +1,12 @@
-FROM node:18
+FROM node:18.16.0
 
 
 # referencing kubernetes environment #
 ENV tokendiscord ${tokendiscord}
 
-ENV repository "https://github.com/lxRbckl/Project-Heimir.git"
 
-
-WORKDIR /usr/src/app
-COPY . .
-
-
-RUN apt-get install -y git
-RUN git clone ${repository}
-
-RUN cd Project-JA
+WORKDIR /usr/app
+COPY ./ /usr/app
 RUN npm install
 
 
