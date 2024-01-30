@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "discord.js": "^14.14.1",
-    "lxrbckl": "^6.3.0",
+    "lxrbckl": "^6.4.0",
     "node-cron": "^3.0.3",
     "octokit": "^3.1.2"
   }
