@@ -3,11 +3,11 @@
 
 /// import <
 const cron = require('node-cron');
+const {githubUpdate} = require('lxrbckl');
 const {Octokit} = require('@Octokit/rest');
 const {
 
    Client,
-   Routes,
    IntentsBitField
 
 } = require('discord.js');
@@ -77,14 +77,14 @@ async function fetch() {
 }
 
 
-async function update() {
+function revise() {
 
 
 
 }
 
 
-async function message() {
+function message() {
 
    
 
