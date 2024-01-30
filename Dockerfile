@@ -2,8 +2,8 @@ FROM node:18.16.0
 
 
 # referencing kubernetes environment #
-ENV tokenGitHub ${tokenGitHub}
-ENV tokendiscord ${tokendiscord}
+ENV tokenOctokit ${tokenOctokit}
+ENV tokenDiscord ${tokenDiscord}
 
 
 WORKDIR /usr/app
