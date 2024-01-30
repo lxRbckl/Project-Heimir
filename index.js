@@ -17,17 +17,16 @@ const {
 
 // setup <
 // initialize <
-const rate = 6;
-const owner = 'lxRbckl';
-const filepath = 'data.json';
-const branch = 'Project-Heimir-2';
-const users = ['ala2q6', 'lxRbckl'];
-const repository = 'Project-Heimir';
-const channelId = '1199281939547435030';
+const owner = process.env.owner;
+const users = process.env.users;
+const branch = process.env.branch;
+const filepath = process.env.filepath;
+const channelId = process.env.channelId;
+const repository = process.env.repository;
 const token = {
 
-   octokit : '',
-   discord : ''
+   octokit : process.env.tokenOctokit,
+   discord : process.env.tokenDiscord
 
 };
 
@@ -99,16 +98,16 @@ async function update(data) {
 }
 
 
-async function message(result) {
+function message(result) {
 
-   (await client.channels.cache.get(channelId)).send({
+   client.channels.cache.get(channelId).send({
 
       content : {
 
-         // (failure) <
          // (successful) <
-         true : '@silent `Failed to update.`',
-         false : '@silent `Update was successful.`'
+         // (failure) <
+         true : '`Update was successful.`',
+         false : '`Failed to update.`'
 
          // >
 
@@ -121,14 +120,14 @@ async function message(result) {
 
 function schedule() {
 
-   this.client.on('ready', async () => {
+   client.on('ready', async () => {
 
       cron.schedule('0 0 * * *', async () => {
 
          let data = await fetch();
          let result = await update(data);
 
-         await message(result);
+         message(result);
 
       });
 
@@ -140,7 +139,6 @@ function schedule() {
 (async () => {
 
    client.login(token.discord);
-
    schedule();
 
 })();
