@@ -62,7 +62,7 @@ class client {
 
    message(result) {
 
-      client.channels.cache.get(this.channelId).send({
+      this.client.channels.cache.get(this.channelId).send({
 
          content : {
 
