@@ -23,9 +23,9 @@ class client {
       // initialize <
       this.token = pToken;
       this.database = pDatabase;
-      this.users = process.env.users;
       this.channelId = process.env.channelId;
-
+      this.users = (process.env.users).split(',');
+      
       this.client = new Client({
 
          rest : {version : '10'},
