@@ -31,7 +31,7 @@ class database {
       var repos = await this.octokit.paginate(query);
       for (const r of repos) {
 
-         let result = (await octokit.repos.get({
+         let result = (await this.octokit.repos.get({
 
             owner : user,
             repo : r.name
