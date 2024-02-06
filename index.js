@@ -21,7 +21,7 @@ const token = {
 
 (async () => {
 
-   let client = new Client({
+   new Client({
 
       pToken : token.discord,
       pDatabase : new Database(token.octokit)

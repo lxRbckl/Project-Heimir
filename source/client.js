@@ -86,7 +86,7 @@ class client {
 
          cron.schedule('0 0 * * *', async () => {
 
-            let data = await fetch();
+            let data = await this.fetch();
             let result = await this.database.updateFile(data);
 
             this.message(result);
@@ -100,7 +100,7 @@ class client {
 
    async run() {
 
-      this.client.run(this.token);
+      this.client.login(this.token);
       this.schedule();
 
    }
