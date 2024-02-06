@@ -11,9 +11,9 @@ const Database = require('./source/database.js');
 // setup <
 const token = {
 
-   octokit : process.env.tokenOctokit,
-   discord : process.env.tokenDiscord
-
+   discord : process.env.tokenDiscord,
+   octokit : process.env.tokenOctokit
+   
 };
 
 // >
