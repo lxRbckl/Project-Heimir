@@ -1,7 +1,7 @@
 FROM node:18.16.0
 
 
-# referencing docker compose .yaml #
+# referencing docker compose #
 ENV users ${users}
 ENV owner ${owner}
 ENV branch ${branch}
