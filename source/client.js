@@ -90,6 +90,8 @@ class client {
 
    async run() {
 
+      // register slash commands <
+      // activate interactions, schedule <
       this.client.login(this.token);
       this.client.rest.put(
 
@@ -104,6 +106,8 @@ class client {
       );
       this.listen();
       this.schedule();
+
+      // >
 
    }
 
