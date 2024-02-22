@@ -3,9 +3,12 @@ const cron = require('node-cron');
 const {
 
    Client,
+   Routes,
    IntentsBitField
 
 } = require('discord.js');
+
+const update = require('./command/update.js');
 
 // >
 
@@ -15,17 +18,19 @@ class client {
    constructor({
 
       pToken,
-      pDatabase
+      pSupervisor
 
    }) {
 
       // setup <
       // initialize <
       this.token = pToken;
-      this.database = pDatabase;
+      this.supervisor = pSupervisor;
+      this.guildId = process.env.guildId;
       this.channelId = process.env.channelId;
-      this.users = (process.env.users).split(',');
-      
+      this.applicationId = process.env.applicationId;
+      this.commands = {'update' : new update(pSupervisor)};
+
       this.client = new Client({
 
          rest : {version : '10'},
@@ -45,35 +50,22 @@ class client {
    }
 
 
-   async fetch() {
+   message(content) {
 
-      var data = {};
-      await Promise.all(this.users.map(async u => {
-
-         let result = this.database.getRepositories(u);
-         data[u] = result;
-
-      }));
-
-      return data;
+      let channel = this.client.channels.cache.get(this.channelId);
+      channel.send(content);
 
    }
 
 
-   message(result) {
+   listen() {
 
-      this.client.channels.cache.get(this.channelId).send({
+      this.client.on('interactionCreate', async (interaction) => {
 
-         content : {
+         let command = this.commands[interaction.commandName];
+         let result = await command.run();
 
-            // event (failure) <
-            // event (success) <
-            false : '`Failed to update.`',
-            true : '`Update was successful.`'
-
-            // >
-
-         }[result]
+         await this.message(result);
 
       });
 
@@ -86,9 +78,7 @@ class client {
 
          cron.schedule('0 0 * * *', async () => {
 
-            let data = await this.fetch();
-            let result = await this.database.updateFile(data);
-
+            let result = await this.supervisor.run();
             this.message(result);
 
          });
@@ -101,6 +91,18 @@ class client {
    async run() {
 
       this.client.login(this.token);
+      this.client.rest.put(
+
+         Routes.applicationGuildCommands(
+
+            this.applicationId,
+            this.guildId
+
+         ),
+         {body : Object.values(this.commands).map((i) => {return i.context();})}
+
+      );
+      this.listen();
       this.schedule();
 
    }

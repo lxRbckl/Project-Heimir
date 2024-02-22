@@ -5,7 +5,7 @@ const {Octokit} = require('@octokit/rest');
 // >
 
 
-class database {
+class supervisor {
 
    constructor(pToken) {
 
@@ -16,6 +16,7 @@ class database {
       this.branch = process.env.branch;
       this.filepath = process.env.filepath;
       this.repository = process.env.repository;
+      this.users = (process.env.users).split(',');
 
       this.octokit = new Octokit({auth : this.token});
 
@@ -72,10 +73,35 @@ class database {
 
    }
 
+
+   async run() {
+
+      var data = {};
+      await Promise.all(this.users.map(async u => {
+
+         let result = await this.getRepositories(u);
+         data[u] = result;
+
+      }));
+
+      return {
+
+         // if (success) <
+         // if (failure) <
+         true : '`File updated.`',
+         false : '`File failed to update.`'
+
+         // >
+
+      }[await this.updateFile(data)];
+
+   }
+
+
 }
 
 
 // export <
-module.exports = database;
+module.exports = supervisor;
 
 // >

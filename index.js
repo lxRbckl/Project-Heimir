@@ -3,7 +3,7 @@
 
 /// import <
 const Client = require('./source/client.js');
-const Database = require('./source/database.js');
+const Supervisor = require('./source/supervisor.js');
 
 // >
 
@@ -24,7 +24,7 @@ const token = {
    new Client({
 
       pToken : token.discord,
-      pDatabase : new Database(token.octokit)
+      pSupervisor : new Supervisor(token.octokit)
 
    }).run();
 
