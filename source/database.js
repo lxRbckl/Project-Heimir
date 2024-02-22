@@ -1,6 +1,6 @@
 // import <
 const {githubUpdate} = require('lxrbckl');
-const {Octokit} = require('@Octokit/rest');
+const {Octokit} = require('@octokit/rest');
 
 // >
 
