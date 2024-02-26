@@ -25,16 +25,16 @@ class supervisor {
    }
 
 
-   async getRepositories(user) {
+   async getRepositories(pUser) {
 
       var data = {};
-      let query = `GET /users/${user}/repos`;
+      let query = `GET /users/${pUser}/repos`;
       var repos = await this.octokit.paginate(query);
       for (const r of repos) {
 
          let result = (await this.octokit.repos.get({
 
-            owner : user,
+            owner : pUser,
             repo : r.name
 
          })).data;
@@ -55,11 +55,11 @@ class supervisor {
    }
 
 
-   async updateFile(data) {
+   async updateFile(pData) {
 
       let result = await githubUpdate({
 
-         pData : data,
+         pData : pData,
          pOwner : this.owner,
          opShowError : false,
          pPath : this.filepath,

@@ -55,10 +55,10 @@ class client {
    }
 
 
-   message(content) {
+   message(pContent) {
 
       let channel = this.client.channels.cache.get(this.channelId);
-      channel.send('`' + content + '`');
+      channel.send('`' + pContent + '`');
 
    }
 
