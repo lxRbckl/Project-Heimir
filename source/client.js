@@ -18,21 +18,21 @@ class client {
    constructor({
 
       pToken,
-      pSupervisor
+      objSupervisor
 
    }) {
 
       // setup <
       // initialize <
       this.token = pToken;
-      this.supervisor = pSupervisor;
+      this.supervisor = objSupervisor;
       this.guildId = process.env.guildId;
       this.channelId = process.env.channelId;
       this.applicationId = process.env.applicationId;
 
       this.commands = {
          
-         'update' : new update(pSupervisor)
+         'update' : new update(this.supervisor)
    
       };
 

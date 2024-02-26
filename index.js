@@ -24,7 +24,7 @@ const token = {
    new Client({
 
       pToken : token.discord,
-      pSupervisor : new Supervisor(token.octokit)
+      objSupervisor : new Supervisor(token.octokit)
 
    }).run();
 

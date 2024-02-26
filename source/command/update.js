@@ -1,8 +1,8 @@
 class update {
 
-   constructor(pSupervisor) {
+   constructor(objSupervisor) {
 
-      this.supervisor = pSupervisor;
+      this.supervisor = objSupervisor;
 
    }
 
