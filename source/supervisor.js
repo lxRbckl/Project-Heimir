@@ -88,8 +88,8 @@ class supervisor {
 
          // if (success) <
          // if (failure) <
-         true : '`File updated.`',
-         false : '`File failed to update.`'
+         true : 'File updated.',
+         false : 'File failed to update.'
 
          // >
 

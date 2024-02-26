@@ -29,7 +29,12 @@ class client {
       this.guildId = process.env.guildId;
       this.channelId = process.env.channelId;
       this.applicationId = process.env.applicationId;
-      this.commands = {'update' : new update(pSupervisor)};
+
+      this.commands = {
+         
+         'update' : new update(pSupervisor)
+   
+      };
 
       this.client = new Client({
 
@@ -53,7 +58,7 @@ class client {
    message(content) {
 
       let channel = this.client.channels.cache.get(this.channelId);
-      channel.send(content);
+      channel.send('`' + content + '`');
 
    }
 
@@ -65,7 +70,7 @@ class client {
          let command = this.commands[interaction.commandName];
          let result = await command.run();
 
-         await this.message(result);
+         this.message(result);
 
       });
 
@@ -90,8 +95,8 @@ class client {
 
    async run() {
 
-      // register slash command <
-      // activate interaction, schedule <
+      let commands = Object.values(this.commands);
+
       this.client.login(this.token);
       this.client.rest.put(
 
@@ -101,13 +106,12 @@ class client {
             this.guildId
 
          ),
-         {body : Object.values(this.commands).map((i) => {return i.context();})}
+         {body : commands.map(c => c.context())}
 
       );
+
       this.listen();
       this.schedule();
-
-      // >
 
    }
 
