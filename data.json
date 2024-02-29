@@ -304,7 +304,7 @@
             "strftime",
             "ubuntu-server"
          ],
-         "language": "Python",
+         "language": "JavaScript",
          "description": "Create daily backups of your GitHub projects to a local directory."
       },
       "Project-Maximus": {
