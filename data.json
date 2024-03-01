@@ -350,6 +350,7 @@
             "discordjs",
             "discordpy",
             "docker",
+            "docker-compose",
             "git-hook",
             "github-actions",
             "github-workflows"
