@@ -1,7 +1,6 @@
 {
    "ala2q6": {
       "ala2q6": {
-         "url": "https://api.github.com/repos/ala2q6/ala2q6",
          "packages": [
             "config",
             "github-config"
@@ -9,82 +8,82 @@
          "languages": [
             null
          ],
-         "description": "Config files for my GitHub profile."
+         "description": "Config files for my GitHub profile.",
+         "url": "https://github.com/ala2q6/ala2q6"
       },
       "CS201R-P1": {
-         "url": "https://api.github.com/repos/ala2q6/CS201R-P1",
          "packages": [],
          "languages": [
             "C++"
          ],
-         "description": "University of Missouri - Kansas City: CS201R: Project 1"
+         "description": "University of Missouri - Kansas City: CS201R: Project 1",
+         "url": "https://github.com/ala2q6/CS201R-P1"
       },
       "CS201R-P2": {
-         "url": "https://api.github.com/repos/ala2q6/CS201R-P2",
          "packages": [],
          "languages": [
             "C++"
          ],
-         "description": "University of Missouri - Kansas City: CS201R: Project 2"
+         "description": "University of Missouri - Kansas City: CS201R: Project 2",
+         "url": "https://github.com/ala2q6/CS201R-P2"
       },
       "CS201R-P3": {
-         "url": "https://api.github.com/repos/ala2q6/CS201R-P3",
          "packages": [],
          "languages": [
             "C++"
          ],
-         "description": "University of Missouri - Kansas City: CS201R: Project 3"
+         "description": "University of Missouri - Kansas City: CS201R: Project 3",
+         "url": "https://github.com/ala2q6/CS201R-P3"
       },
       "CS201R-P4": {
-         "url": "https://api.github.com/repos/ala2q6/CS201R-P4",
          "packages": [],
          "languages": [
             "C++"
          ],
-         "description": "University of Missouri - Kansas City: CS201R: Project 4"
+         "description": "University of Missouri - Kansas City: CS201R: Project 4",
+         "url": "https://github.com/ala2q6/CS201R-P4"
       },
       "CS201R-P5": {
-         "url": "https://api.github.com/repos/ala2q6/CS201R-P5",
          "packages": [],
          "languages": [
             "C++"
          ],
-         "description": "University of Missouri - Kansas City: CS201R: Project 5"
+         "description": "University of Missouri - Kansas City: CS201R: Project 5",
+         "url": "https://github.com/ala2q6/CS201R-P5"
       },
       "CS303-P1": {
-         "url": "https://api.github.com/repos/ala2q6/CS303-P1",
          "packages": [],
          "languages": [
             "C++"
          ],
-         "description": "University of Missouri - Kansas City: CS303: Project 1"
+         "description": "University of Missouri - Kansas City: CS303: Project 1",
+         "url": "https://github.com/ala2q6/CS303-P1"
       },
       "CS303-P2": {
-         "url": "https://api.github.com/repos/ala2q6/CS303-P2",
          "packages": [],
          "languages": [
             "C++"
          ],
-         "description": "University of Missouri - Kansas City: CS303: Project 2"
+         "description": "University of Missouri - Kansas City: CS303: Project 2",
+         "url": "https://github.com/ala2q6/CS303-P2"
       },
       "CS441-P2": {
-         "url": "https://api.github.com/repos/ala2q6/CS441-P2",
          "packages": [],
          "languages": [
             "Clojure"
          ],
-         "description": "University of Missouri - Kansas City: CS441: Project 2"
+         "description": "University of Missouri - Kansas City: CS441: Project 2",
+         "url": "https://github.com/ala2q6/CS441-P2"
       },
       "CS449-P": {
-         "url": "https://api.github.com/repos/ala2q6/CS449-P",
          "packages": [],
          "languages": [
             null
          ],
-         "description": "University of Missouri - Kansas City: CS449: Project"
+         "description": "University of Missouri - Kansas City: CS449: Project",
+         "url": "https://github.com/ala2q6/CS449-P"
       },
       "CS456-P": {
-         "url": "https://api.github.com/repos/ala2q6/CS456-P",
          "packages": [
             "dash-python",
             "gunicorn",
@@ -93,34 +92,34 @@
          "languages": [
             "Python"
          ],
-         "description": "University of Missouri - Kansas City: CS456: Project"
+         "description": "University of Missouri - Kansas City: CS456: Project",
+         "url": "https://github.com/ala2q6/CS456-P"
       },
       "CS461-P1": {
-         "url": "https://api.github.com/repos/ala2q6/CS461-P1",
          "packages": [],
          "languages": [
             "Python"
          ],
-         "description": "University of Missouri - Kansas City: CS461: Project 1"
+         "description": "University of Missouri - Kansas City: CS461: Project 1",
+         "url": "https://github.com/ala2q6/CS461-P1"
       },
       "CS461-P2": {
-         "url": "https://api.github.com/repos/ala2q6/CS461-P2",
          "packages": [],
          "languages": [
             "Python"
          ],
-         "description": "University of Missouri - Kansas City: CS461: Project 2"
+         "description": "University of Missouri - Kansas City: CS461: Project 2",
+         "url": "https://github.com/ala2q6/CS461-P2"
       },
       "CS461-P3": {
-         "url": "https://api.github.com/repos/ala2q6/CS461-P3",
          "packages": [],
          "languages": [
             "Python"
          ],
-         "description": "University of Missouri - Kansas City: CS461: Project 3"
+         "description": "University of Missouri - Kansas City: CS461: Project 3",
+         "url": "https://github.com/ala2q6/CS461-P3"
       },
       "CS490DL-P": {
-         "url": "https://api.github.com/repos/ala2q6/CS490DL-P",
          "packages": [
             "cv2",
             "dash-python",
@@ -136,10 +135,10 @@
          "languages": [
             "Python"
          ],
-         "description": "University of Missouri - Kansas City: CS490 Deep Learning: Project"
+         "description": "University of Missouri - Kansas City: CS490 Deep Learning: Project",
+         "url": "https://github.com/ala2q6/CS490DL-P"
       },
       "HAR-S22": {
-         "url": "https://api.github.com/repos/ala2q6/HAR-S22",
          "packages": [
             "cv2",
             "dash-python",
@@ -155,12 +154,12 @@
          "languages": [
             "Python"
          ],
-         "description": "University of Missouri - Kansas City: Hack-A-Roo: Spring 2022"
+         "description": "University of Missouri - Kansas City: Hack-A-Roo: Spring 2022",
+         "url": "https://github.com/ala2q6/HAR-S22"
       }
    },
    "lxRbckl": {
       "lxRbckl": {
-         "url": "https://api.github.com/repos/lxRbckl/lxRbckl",
          "packages": [
             "chatgpt",
             "fp",
@@ -181,10 +180,10 @@
          "languages": [
             "Python"
          ],
-         "description": "CRUD tools to enhance readability and abstraction in projects, for both local and remote file management."
+         "description": "CRUD tools to enhance readability and abstraction in projects, for both local and remote file management.",
+         "url": "https://github.com/lxRbckl/lxRbckl"
       },
       "Project-Acta-Mea": {
-         "url": "https://api.github.com/repos/lxRbckl/Project-Acta-Mea",
          "packages": [
             "discordpy",
             "docker",
@@ -199,10 +198,10 @@
          "languages": [
             "JavaScript"
          ],
-         "description": "Administer servers and services via a Discord bot utilizing a remote data file."
+         "description": "Administer servers and services via a Discord bot utilizing a remote data file.",
+         "url": "https://github.com/lxRbckl/Project-Acta-Mea"
       },
       "Project-ASBC": {
-         "url": "https://api.github.com/repos/lxRbckl/Project-ASBC",
          "packages": [
             "asyncio",
             "bash",
@@ -224,10 +223,10 @@
          "languages": [
             "Python"
          ],
-         "description": "Leverage automation and artificial intelligence for monitoring and object detection of Blink camera footage."
+         "description": "Leverage automation and artificial intelligence for monitoring and object detection of Blink camera footage.",
+         "url": "https://github.com/lxRbckl/Project-ASBC"
       },
       "Project-Borg": {
-         "url": "https://api.github.com/repos/lxRbckl/Project-Borg",
          "packages": [
             "glob",
             "matplotlib",
@@ -237,10 +236,10 @@
          "languages": [
             "Python"
          ],
-         "description": "Conceptualize the data of biased roulette wheels."
+         "description": "Conceptualize the data of biased roulette wheels.",
+         "url": "https://github.com/lxRbckl/Project-Borg"
       },
       "Project-Comperio": {
-         "url": "https://api.github.com/repos/lxRbckl/Project-Comperio",
          "packages": [
             "discordpy",
             "selenium-python",
@@ -252,10 +251,10 @@
          "languages": [
             "Python"
          ],
-         "description": " Visualize the connections between Instagram followers and their interrelationships."
+         "description": " Visualize the connections between Instagram followers and their interrelationships.",
+         "url": "https://github.com/lxRbckl/Project-Comperio"
       },
       "Project-Domum": {
-         "url": "https://api.github.com/repos/lxRbckl/Project-Domum",
          "packages": [
             "asyncio",
             "discordpy",
@@ -267,10 +266,10 @@
          "languages": [
             "Python"
          ],
-         "description": "Manage power outlets by utilizing the GPIO pins of a Raspberry Pi."
+         "description": "Manage power outlets by utilizing the GPIO pins of a Raspberry Pi.",
+         "url": "https://github.com/lxRbckl/Project-Domum"
       },
       "Project-Fenaverat": {
-         "url": "https://api.github.com/repos/lxRbckl/Project-Fenaverat",
          "packages": [
             "dash-bootstrap-components",
             "dash-python",
@@ -284,10 +283,10 @@
          "languages": [
             "Python"
          ],
-         "description": "A website portfolio crafted to showcase details about yourself, your projects, and your servers."
+         "description": "A website portfolio crafted to showcase details about yourself, your projects, and your servers.",
+         "url": "https://github.com/lxRbckl/Project-Fenaverat"
       },
       "Project-Hakkonen": {
-         "url": "https://api.github.com/repos/lxRbckl/Project-Hakkonen",
          "packages": [
             "dash-bootstrap-components",
             "portfolio",
@@ -298,10 +297,10 @@
          "languages": [
             "Python"
          ],
-         "description": "Manage project feeds on your portfolio with a user interface."
+         "description": "Manage project feeds on your portfolio with a user interface.",
+         "url": "https://github.com/lxRbckl/Project-Hakkonen"
       },
       "Project-Heimir": {
-         "url": "https://api.github.com/repos/lxRbckl/Project-Heimir",
          "packages": [
             "discordpy",
             "docker",
@@ -318,10 +317,10 @@
          "languages": [
             "JavaScript"
          ],
-         "description": "Maintain currency of your portfolio database with consistent updates."
+         "description": "Maintain currency of your portfolio database with consistent updates.",
+         "url": "https://github.com/lxRbckl/Project-Heimir"
       },
       "Project-JA": {
-         "url": "https://api.github.com/repos/lxRbckl/Project-JA",
          "packages": [
             "chatgpt",
             "discordjs",
@@ -338,10 +337,10 @@
          "languages": [
             "JavaScript"
          ],
-         "description": "Interact with the mystical conch shell, engage in weekly conversation prompts, and delegate decision-making."
+         "description": "Interact with the mystical conch shell, engage in weekly conversation prompts, and delegate decision-making.",
+         "url": "https://github.com/lxRbckl/Project-JA"
       },
       "Project-Kinma": {
-         "url": "https://api.github.com/repos/lxRbckl/Project-Kinma",
          "packages": [
             "asyncio",
             "bash",
@@ -359,10 +358,10 @@
          "languages": [
             "JavaScript"
          ],
-         "description": "Create daily backups of your GitHub projects to a local directory."
+         "description": "Create daily backups of your GitHub projects to a local directory.",
+         "url": "https://github.com/lxRbckl/Project-Kinma"
       },
       "Project-Maximus": {
-         "url": "https://api.github.com/repos/lxRbckl/Project-Maximus",
          "packages": [
             "crontab",
             "dash-python",
@@ -376,10 +375,10 @@
          "languages": [
             "Python"
          ],
-         "description": "Use a Raspberry Pi to capture the live stream of a USB camera and manage relays all wrapped into a user interface."
+         "description": "Use a Raspberry Pi to capture the live stream of a USB camera and manage relays all wrapped into a user interface.",
+         "url": "https://github.com/lxRbckl/Project-Maximus"
       },
       "Project-OGIWS": {
-         "url": "https://api.github.com/repos/lxRbckl/Project-OGIWS",
          "packages": [
             "python-dash",
             "python-plotly",
@@ -389,10 +388,10 @@
          "languages": [
             "Python"
          ],
-         "description": "Offset Graph by Individual Wheel Speed"
+         "description": "Offset Graph by Individual Wheel Speed",
+         "url": "https://github.com/lxRbckl/Project-OGIWS"
       },
       "Project-Panavia": {
-         "url": "https://api.github.com/repos/lxRbckl/Project-Panavia",
          "packages": [
             "dash-python",
             "ipinfodb",
@@ -401,10 +400,10 @@
          "languages": [
             "Python"
          ],
-         "description": "Create a model and develop a framework for data related to visual ballistics on roulette wheels."
+         "description": "Create a model and develop a framework for data related to visual ballistics on roulette wheels.",
+         "url": "https://github.com/lxRbckl/Project-Panavia"
       },
       "Project-PasCam": {
-         "url": "https://api.github.com/repos/lxRbckl/Project-PasCam",
          "packages": [
             "cryptojs",
             "discordjs",
@@ -418,10 +417,10 @@
          "languages": [
             "JavaScript"
          ],
-         "description": "Store and share passwords using a Discord bot."
+         "description": "Store and share passwords using a Discord bot.",
+         "url": "https://github.com/lxRbckl/Project-PasCam"
       },
       "Project-RCoD": {
-         "url": "https://api.github.com/repos/lxRbckl/Project-RCoD",
          "packages": [
             "apple-automator",
             "asyncio",
@@ -439,10 +438,10 @@
          "languages": [
             "Python"
          ],
-         "description": "Reconnect spontaneously disconnected Discord calls on Retina displays."
+         "description": "Reconnect spontaneously disconnected Discord calls on Retina displays.",
+         "url": "https://github.com/lxRbckl/Project-RCoD"
       },
       "Project-Serra": {
-         "url": "https://api.github.com/repos/lxRbckl/Project-Serra",
          "packages": [
             "dash-python",
             "discordpy",
@@ -451,10 +450,10 @@
          "languages": [
             "Python"
          ],
-         "description": "Track your daily consumption through a Discord bot and present it visually."
+         "description": "Track your daily consumption through a Discord bot and present it visually.",
+         "url": "https://github.com/lxRbckl/Project-Serra"
       },
       "Project-Skotak": {
-         "url": "https://api.github.com/repos/lxRbckl/Project-Skotak",
          "packages": [
             "discordpy",
             "portfolio",
@@ -464,10 +463,10 @@
          "languages": [
             "Python"
          ],
-         "description": "Fine-tune your portfolio settings using a Discord bot."
+         "description": "Fine-tune your portfolio settings using a Discord bot.",
+         "url": "https://github.com/lxRbckl/Project-Skotak"
       },
       "Project-TeneT": {
-         "url": "https://api.github.com/repos/lxRbckl/Project-TeneT",
          "packages": [
             "xlrd",
             "xlutils",
@@ -476,10 +475,10 @@
          "languages": [
             "Python"
          ],
-         "description": "A reverse Monte Carlo building simulation for visual ballistics on roulette wheels with RRS systems."
+         "description": "A reverse Monte Carlo building simulation for visual ballistics on roulette wheels with RRS systems.",
+         "url": "https://github.com/lxRbckl/Project-TeneT"
       },
       "Project-UMKC": {
-         "url": "https://api.github.com/repos/lxRbckl/Project-UMKC",
          "packages": [
             "asyncio",
             "discordpy"
@@ -487,10 +486,10 @@
          "languages": [
             "Python"
          ],
-         "description": "Get notified on Discord when your Zoom classes commence."
+         "description": "Get notified on Discord when your Zoom classes commence.",
+         "url": "https://github.com/lxRbckl/Project-UMKC"
       },
       "Project-VBR": {
-         "url": "https://api.github.com/repos/lxRbckl/Project-VBR",
          "packages": [
             "dash-bootstrap-components",
             "dash-python",
@@ -500,10 +499,10 @@
          "languages": [
             "Python"
          ],
-         "description": "Create a conceptual model for data from visual ballistics on roulette wheels"
+         "description": "Create a conceptual model for data from visual ballistics on roulette wheels",
+         "url": "https://github.com/lxRbckl/Project-VBR"
       },
       "Project-WS3K": {
-         "url": "https://api.github.com/repos/lxRbckl/Project-WS3K",
          "packages": [
             "asyncio",
             "discordpy",
@@ -514,10 +513,10 @@
          "languages": [
             "Python"
          ],
-         "description": "Get alerted when a Discord user starts typing in a specific Discord channel."
+         "description": "Get alerted when a Discord user starts typing in a specific Discord channel.",
+         "url": "https://github.com/lxRbckl/Project-WS3K"
       },
       "Resume-Template": {
-         "url": "https://api.github.com/repos/lxRbckl/Resume-Template",
          "packages": [
             "dash-python",
             "poetry-python",
@@ -526,7 +525,8 @@
          "languages": [
             "Python"
          ],
-         "description": "Build a resume, fill in details about yourself."
+         "description": "Build a resume, fill in details about yourself.",
+         "url": "https://github.com/lxRbckl/Resume-Template"
       }
    }
 }
