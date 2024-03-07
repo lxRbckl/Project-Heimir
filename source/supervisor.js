@@ -41,10 +41,10 @@ class supervisor {
 
          data[result.name] = {
 
-            'url' : result.url,
             'packages' : result.topics,
             'languages' : [result.language],
-            'description' : result.description
+            'description' : result.description,
+            'url' : `https://github.com/${pUser}/${result.name}`
 
          };
 
