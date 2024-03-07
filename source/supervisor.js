@@ -42,8 +42,8 @@ class supervisor {
          data[result.name] = {
 
             'url' : result.url,
-            'topics' : result.topics,
-            'language' : result.language,
+            'packages' : result.topics,
+            'languages' : [result.language],
             'description' : result.description
 
          };
