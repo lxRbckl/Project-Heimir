@@ -1,6 +1,6 @@
 // import <
-const {githubUpdate} = require('lxrbckl');
 const {Octokit} = require('@octokit/rest');
+const {githubUpdate, axiosGet} = require('lxrbckl');
 
 // >
 
@@ -15,6 +15,7 @@ class supervisor {
       this.owner = process.env.owner;
       this.branch = process.env.branch;
       this.filepath = process.env.filepath;
+      this.configLink = process.env.configLink;
       this.repository = process.env.repository;
       this.users = (process.env.users).split(',');
 
@@ -25,7 +26,12 @@ class supervisor {
    }
 
 
-   async getRepositories(pUser) {
+   async getRepositories({
+      
+      pUser,
+      pExcluded
+   
+   }) {
 
       var data = {};
       let query = `GET /users/${pUser}/repos`;
@@ -39,14 +45,21 @@ class supervisor {
 
          })).data;
 
-         data[result.name] = {
+         // if (not excluded) <
+         if (!(pExcluded.includes(result.name))) {
 
-            'packages' : result.topics,
-            'languages' : [result.language],
-            'description' : result.description,
-            'url' : `https://github.com/${pUser}/${result.name}`
+            data[result.name] = {
 
-         };
+               'packages' : result.topics,
+               'languages' : [result.language],
+               'description' : result.description,
+               'url' : `https://github.com/${pUser}/${result.name}`
+
+            };
+         
+         }
+
+         // >
 
       }
 
@@ -77,9 +90,15 @@ class supervisor {
    async run() {
 
       var data = {};
+      let config = await axiosGet({pURL : this.configLink});
       await Promise.all(this.users.map(async u => {
 
-         let result = await this.getRepositories(u);
+         let result = await this.getRepositories({
+            
+            pUser : u,
+            pExcluded : config['projects']['exclude']
+         
+         });
          data[u] = result;
 
       }));

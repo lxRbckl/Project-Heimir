@@ -8,6 +8,7 @@ ENV branch ${branch}
 ENV guildId ${guildId}
 ENV filepath ${filepath}
 ENV channelId ${channelId}
+ENV configLink ${configLink}
 ENV repository ${repository}
 ENV tokenOctokit ${tokenOctokit}
 ENV tokenDiscord ${tokenDiscord}
