@@ -322,7 +322,6 @@
       },
       "Project-JA": {
          "packages": [
-            "chatgpt",
             "discordjs",
             "discordpy",
             "docker",
@@ -332,7 +331,8 @@
             "github-workflows",
             "node-cron",
             "oop",
-            "openai"
+            "openai",
+            "openai-api"
          ],
          "languages": [
             "JavaScript"
