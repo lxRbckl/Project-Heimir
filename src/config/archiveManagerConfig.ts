@@ -15,11 +15,11 @@ const archiveManagerConfig: {
 
 } = {
 
-   file : process.env.archiveFile!,
-   owner : process.env.archiveOwner!,
-   token : process.env.octokitToken!,
-   branch : process.env.archiveBranch!,
-   repository : process.env.archiveRepository!,
+   file : process.env.file!,
+   owner : process.env.owner!,
+   branch : process.env.branch!,
+   token : process.env.tokenOctokit!,
+   repository : process.env.repository!,
    urlGitHubUsers : process.env.urlGitHubUsers!
 
 }
