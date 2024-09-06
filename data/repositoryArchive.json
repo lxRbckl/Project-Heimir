@@ -327,8 +327,7 @@
       "languages": [
          "Python",
          "CSS",
-         "Dockerfile",
-         "Procfile"
+         "Dockerfile"
       ],
       "url": "https://github.com/lxRbckl/Project-Fenaverat",
       "description": "A website portfolio crafted to showcase details about yourself, your servers, and your projects"
