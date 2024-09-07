@@ -317,9 +317,9 @@
          "docker",
          "flask",
          "gunicorn",
-         "heroku",
          "plotly-python",
          "portfolio",
+         "render",
          "selenium-python",
          "webdriver-manager"
       ],
