@@ -1,4 +1,4 @@
-# Project Heimir 2
+# [Project Heimir 2](https://github.com/lxRbckl/Project-Heimir/wiki/V2)
 > Autonomous repository archive manager designed provide data to a portfolio algorithm. V2. Spring 2024.
 
 ---
