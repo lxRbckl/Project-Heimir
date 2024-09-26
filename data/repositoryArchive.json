@@ -264,20 +264,6 @@
       "url": "https://github.com/lxRbckl/Project-ASBC",
       "description": "Leverage automation and artificial intelligence for monitoring and object detection of Blink camera footage"
    },
-   "Project-Borg": {
-      "topics": [
-         "glob",
-         "matplotlib",
-         "xlrd",
-         "xlwt"
-      ],
-      "owner": "lxRbckl",
-      "languages": [
-         "Python"
-      ],
-      "url": "https://github.com/lxRbckl/Project-Borg",
-      "description": "Conceptualize the data of biased roulette wheels"
-   },
    "Project-Comperio": {
       "topics": [
          "discordpy",
@@ -440,20 +426,6 @@
       "url": "https://github.com/lxRbckl/Project-Maximus",
       "description": "Use a Raspberry Pi to capture the live stream of a USB camera and manage relays all wrapped into a user interface"
    },
-   "Project-OGIWS": {
-      "topics": [
-         "python-dash",
-         "python-plotly",
-         "xlrd",
-         "xlwt"
-      ],
-      "owner": "lxRbckl",
-      "languages": [
-         "Python"
-      ],
-      "url": "https://github.com/lxRbckl/Project-OGIWS",
-      "description": "Offset Graph by Individual Wheel Speed"
-   },
    "Project-Panavia": {
       "topics": [
          "dash-python",
@@ -510,19 +482,6 @@
       "url": "https://github.com/lxRbckl/Project-RCoD",
       "description": "Reconnect to dropped Discord calls on Retina displays"
    },
-   "Project-TeneT": {
-      "topics": [
-         "xlrd",
-         "xlutils",
-         "xlwt"
-      ],
-      "owner": "lxRbckl",
-      "languages": [
-         "Python"
-      ],
-      "url": "https://github.com/lxRbckl/Project-TeneT",
-      "description": "A reverse Monte Carlo building simulation for visual ballistics on roulette wheels with RRS systems"
-   },
    "Project-UMKC": {
       "topics": [
          "asyncio",
@@ -534,20 +493,6 @@
       ],
       "url": "https://github.com/lxRbckl/Project-UMKC",
       "description": "Get notified on Discord when your Zoom classes commence"
-   },
-   "Project-VBR": {
-      "topics": [
-         "dash-bootstrap-components",
-         "dash-python",
-         "pandas",
-         "plotly-python"
-      ],
-      "owner": "lxRbckl",
-      "languages": [
-         "Python"
-      ],
-      "url": "https://github.com/lxRbckl/Project-VBR",
-      "description": "Create a conceptual model for data from visual ballistics on roulette wheels"
    },
    "Project-WS3K": {
       "topics": [
