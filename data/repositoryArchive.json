@@ -424,7 +424,7 @@
          "Python"
       ],
       "url": "https://github.com/lxRbckl/Project-Maximus",
-      "description": "Use a Raspberry Pi to capture the live stream of a USB camera and manage relays all wrapped into a user interface"
+      "description": "Use a Raspberry Pi to capture and record the stream of one to many USB camera(s)"
    },
    "Project-Panavia": {
       "topics": [
