@@ -235,7 +235,7 @@
          "Dockerfile"
       ],
       "url": "https://github.com/lxRbckl/Project-Acta-Mea",
-      "description": "Administer servers and services via a Discord bot utilizing a remote data file"
+      "description": "Server Manager"
    },
    "Project-ASBC": {
       "topics": [
@@ -338,7 +338,7 @@
          "Dockerfile"
       ],
       "url": "https://github.com/lxRbckl/Project-Heimir",
-      "description": "Autonomous repository archive manager designed provide data to a portfolio algorithm"
+      "description": "Project Manager"
    },
    "Project-JA": {
       "topics": [
