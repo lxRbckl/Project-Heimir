@@ -235,7 +235,7 @@
          "Dockerfile"
       ],
       "url": "https://github.com/lxRbckl/Project-Acta-Mea",
-      "description": "Server Manager"
+      "description": "CRUD management for servers and services featuring dockerode integration"
    },
    "Project-ASBC": {
       "topics": [
@@ -357,7 +357,7 @@
       ],
       "owner": "lxRbckl",
       "languages": [
-         "JavaScript",
+         "TypeScript",
          "Dockerfile"
       ],
       "url": "https://github.com/lxRbckl/Project-JA",
