@@ -1,4 +1,5 @@
 import { Octokit } from 'octokit';
+import { RepositoryInfo } from './interfaces';
 
 export class GitHubClient {
   private octokit: Octokit;
@@ -11,9 +12,9 @@ export class GitHubClient {
 
   async getUserRepositoryNames(username: string): Promise<string[]> {
     try {
-      const allRepos: string[] = [];
       let page = 1;
       let hasMorePages = true;
+      const allRepos: string[] = [];
 
       while (hasMorePages) {
         const { data } = await this.octokit.rest.repos.listForUser({
@@ -38,9 +39,9 @@ export class GitHubClient {
 
   async getUserOrganizationNames(username: string): Promise<string[]> {
     try {
-      const allOrgs: string[] = [];
       let page = 1;
       let hasMorePages = true;
+      const allOrgs: string[] = [];
 
       while (hasMorePages) {
         const { data } = await this.octokit.rest.orgs.listForUser({
@@ -63,9 +64,9 @@ export class GitHubClient {
 
   async getUserRepositoriesInOrganization(username: string, organization: string): Promise<string[]> {
     try {
-      const allRepos: any[] = [];
       let page = 1;
       let hasMorePages = true;
+      const allRepos: any[] = [];
 
       while (hasMorePages) {
         const { data } = await this.octokit.rest.repos.listForOrg({
@@ -100,11 +101,7 @@ export class GitHubClient {
     }
   }
 
-  async getRepositoryInfo(username: string, repository: string): Promise<{
-    readme: string;
-    branchCount: number;
-    repositoryUrl: string;
-  }> {
+  async getRepositoryInfo(username: string, repository: string): Promise<RepositoryInfo | null> {
     try {
       const repoResponse = await this.octokit.rest.repos.get({
         owner: username,
@@ -112,7 +109,11 @@ export class GitHubClient {
       });
 
       if (repoResponse.data.private) {
-        throw new Error(`Repository ${username}/${repository} is private and will be skipped`);
+        return null;
+      }
+
+      if (repository.toLowerCase() === username.toLowerCase()) {
+        return null;
       }
 
       const readmeResponse = await this.octokit.rest.repos.getReadme({
@@ -120,9 +121,9 @@ export class GitHubClient {
         repo: repository,
       });
 
-      const allBranches: any[] = [];
       let page = 1;
       let hasMorePages = true;
+      const allBranches: any[] = [];
 
       while (hasMorePages) {
         const branchesResponse = await this.octokit.rest.repos.listBranches({

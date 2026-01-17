@@ -1,4 +1,4 @@
-# Project Heimir
+# Project SelfStack
 > A TypeScript project.
 
 ## Prerequisites
