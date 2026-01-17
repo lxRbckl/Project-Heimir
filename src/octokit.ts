@@ -9,7 +9,6 @@ export class GitHubClient {
     });
   }
 
-  /** Get repository names for a specific user */
   async getUserRepositoryNames(username: string): Promise<string[]> {
     try {
       const allRepos: string[] = [];
@@ -33,12 +32,10 @@ export class GitHubClient {
 
       return allRepos;
     } catch (error) {
-      console.error(`Error fetching repositories for user ${username}:`, error);
       throw error;
     }
   }
 
-  /** Get organization names for a specific user */
   async getUserOrganizationNames(username: string): Promise<string[]> {
     try {
       const allOrgs: string[] = [];
@@ -60,12 +57,10 @@ export class GitHubClient {
 
       return allOrgs;
     } catch (error) {
-      console.error(`Error fetching organizations for user ${username}:`, error);
       throw error;
     }
   }
 
-  /** Get repository names owned by a specific user within a GitHub organization */
   async getUserRepositoriesInOrganization(username: string, organization: string): Promise<string[]> {
     try {
       const allRepos: any[] = [];
@@ -85,16 +80,26 @@ export class GitHubClient {
         page++;
       }
 
-      return allRepos
-        .filter((repo: any) => repo.owner.login === username)
-        .map((repo: any) => repo.name);
+      const contributedRepos: string[] = [];
+      for (const repo of allRepos) {
+        try {
+          await this.octokit.rest.repos.getCollaboratorPermissionLevel({
+            owner: organization,
+            repo: repo.name,
+            username: username,
+          });
+          contributedRepos.push(repo.name);
+        } catch (error) {
+          continue;
+        }
+      }
+
+      return contributedRepos;
     } catch (error) {
-      console.error(`Error fetching repositories for user ${username} in organization ${organization}:`, error);
       throw error;
     }
   }
 
-  /** Get comprehensive information about a specific repository */
   async getRepositoryInfo(username: string, repository: string): Promise<{
     readme: string;
     branchCount: number;
@@ -105,6 +110,10 @@ export class GitHubClient {
         owner: username,
         repo: repository,
       });
+
+      if (repoResponse.data.private) {
+        throw new Error(`Repository ${username}/${repository} is private and will be skipped`);
+      }
 
       const readmeResponse = await this.octokit.rest.repos.getReadme({
         owner: username,
@@ -139,7 +148,6 @@ export class GitHubClient {
         repositoryUrl: repoResponse.data.html_url,
       };
     } catch (error) {
-      console.error(`Error fetching repository information for ${username}/${repository}:`, error);
       throw error;
     }
   }
