@@ -1,24 +1,7 @@
 # Project SelfStack
-> A TypeScript project.
-
-## Prerequisites
-
-- Node.js >= 18.0.0 (tested with v25.3.0)
-- npm (comes with Node.js)
-
----
-
-### Setup
-
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-2. Install TypeScript (if not already installed):
-   ```bash
-   npm install --save-dev typescript
-   ```
+> Scan repositories daily to extract and catalog technology stack information into a centralized data file. V3. Spring 2026.
+> 
+> **`TypeScript`** **`Docker`** `node-cron` `octokit`
 
 ---
 
@@ -27,6 +10,8 @@
 npm run build
 npm start
 ```
+
+---
 
 ## Remote Deployment
 ```bash
@@ -46,6 +31,5 @@ docker run \
   -e GITHUB_TOKEN=<your-token-here> \
   project-heimir
 ```
-
 
 ---
