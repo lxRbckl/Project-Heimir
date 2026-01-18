@@ -6,12 +6,13 @@ async function main() {
 
 
   const targetBranch = "main";
+  const projectDelimiter = "---";
   const targetFile = "output.txt";
   const packageRegex = /`([^`]+)`/g;
   const targetRepository = "Project-Heimir";
   const languageRegex = /\*\*`([^`]+)`\*\*/g;
   const commitMessage = "Add repository data output";
-  const usernames = 'lxrbckl, ala2q6'.split(',').map(item => item.trim());
+  const usernames = "lxrbckl, ala2q6".split(',').map(item => item.trim());
   const client = new GitHubClient("");
 
 
@@ -44,6 +45,8 @@ async function main() {
       try {
         const details = await client.getRepositoryInfo(username, repository);
         if (details) {
+          const readmeParts = details.readme.split(projectDelimiter);
+          details.readme = readmeParts[0] || "";
           detailedRepositoryData[username][repository] = details;
         }
       } catch (error) {
@@ -74,10 +77,7 @@ async function main() {
     }
   }
 
-  console.log('Tech Stack Analysis:');
-  console.log('Languages:', Array.from(techStack.language));
-  console.log('Packages:', Array.from(techStack.package));
-  console.log(detailedRepositoryData);
+
 }
 
 
