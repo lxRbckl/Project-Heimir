@@ -6,17 +6,18 @@ import { RepositoryDetails } from './interfaces';
 async function main() {
 
 
-  const targetBranch = "V3";
-  const projectDelimiter = "---";
-  const cronSchedule = "0 0 * * *";
-  const packageRegex = /`([^`]+)`/g;
-  const repositoryOwner = "lxrbckl";
-  const targetFile = "data/automated.json";
-  const targetRepository = "Project-Heimir";
-  const languageRegex = /\*\*`([^`]+)`\*\*/g;
-  const commitMessage = "Project SelfStack - Automated Data Collection";
-  const usernames = "lxrbckl, ala2q6".split(',').map(item => item.trim());
-  const client = new GitHubClient("");
+  const client = new GitHubClient(process.env.GITHUB_TOKEN!);
+
+  const targetFile = process.env.TARGET_FILE!;
+  const targetBranch = process.env.TARGET_BRANCH!;
+  const cronSchedule = process.env.CRON_SCHEDULE!;
+  const commitMessage = process.env.COMMIT_MESSAGE!;
+  const repositoryOwner = process.env.REPOSITORY_OWNER!;
+  const projectDelimiter = process.env.PROJECT_DELIMITER!;
+  const targetRepository = process.env.TARGET_REPOSITORY!;
+  const packageRegex = new RegExp(process.env.PACKAGE_REGEX!, 'g');
+  const languageRegex = new RegExp(process.env.LANGUAGE_REGEX!, 'g');
+  const usernames = process.env.USERNAMES!.split(',').map(item => item.trim());
 
 
   schedule(cronSchedule, async () => {

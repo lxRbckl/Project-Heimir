@@ -109,3 +109,6 @@ temp/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Application data
+data/
