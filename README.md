@@ -12,8 +12,6 @@ npm run build
 npm start
 ```
 
----
-
 ### Remote Deployment
 ```bash
 docker run \
