@@ -15,7 +15,7 @@ npm start
 ### Remote Deployment
 ```bash
 docker run \
-  --name project-selfstack \
+  --name selfstack \
   --restart unless-stopped \
   -e TARGET_BRANCH=V3 \
   -e CRON_SCHEDULE="0 0 * * *" \
