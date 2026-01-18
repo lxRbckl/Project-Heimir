@@ -5,7 +5,7 @@
 
 ---
 
-## Local Development
+### Local Development
 ```bash
 npm install
 npm run build
@@ -14,7 +14,7 @@ npm start
 
 ---
 
-## Remote Deployment
+### Remote Deployment
 ```bash
 docker run \
   --name project-selfstack \
