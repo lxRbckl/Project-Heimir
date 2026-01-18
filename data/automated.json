@@ -1,5 +1,5 @@
 {
-  "detailedRepositoryData": {
+  "repositories": {
     "lxrbckl": {
       "Project-Maximus": {
         "readme": "# Project Maximus 2\n> Use a Raspberry Pi to capture and record the stream of many USB camera(s) and interact with relay devices in a mobile environment. Fall 2024.\n>\n> **`Shell`** **`Python`** `RPi.GPIO` `sys`\n\n",
