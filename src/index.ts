@@ -8,15 +8,15 @@ async function main() {
 
   const client = new GitHubClient(process.env.GITHUB_TOKEN!);
 
+  const projectDelimiter = '---';
   const targetFile = process.env.TARGET_FILE!;
   const targetBranch = process.env.TARGET_BRANCH!;
   const cronSchedule = process.env.CRON_SCHEDULE!;
+  const packageRegex = new RegExp('`([^`]+)`', 'g');
   const commitMessage = process.env.COMMIT_MESSAGE!;
   const repositoryOwner = process.env.REPOSITORY_OWNER!;
-  const projectDelimiter = process.env.PROJECT_DELIMITER!;
   const targetRepository = process.env.TARGET_REPOSITORY!;
-  const packageRegex = new RegExp(process.env.PACKAGE_REGEX!, 'g');
-  const languageRegex = new RegExp(process.env.LANGUAGE_REGEX!, 'g');
+  const languageRegex = new RegExp('\\*\\*`([^`]+)`\\*\\*', 'g');
   const usernames = process.env.USERNAMES!.split(',').map(item => item.trim());
 
 
