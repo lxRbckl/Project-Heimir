@@ -186,38 +186,6 @@ export class GitHubClient {
   }
 
   /**
-   * Gets and parses JSON content from a file in a repository
-   * @param owner Repository owner
-   * @param repo Repository name
-   * @param path File path within the repository
-   * @param branch Branch name
-   * @returns Parsed JSON content
-   */
-  async getFileContents(
-    owner: string,
-    repo: string,
-    path: string,
-    branch: string
-  ): Promise<any> {
-    try {
-      const response = await this.octokit.rest.repos.getContent({
-        owner,
-        repo,
-        path,
-        ref: branch,
-      });
-
-      const content = Buffer
-        .from(response.data.content, 'base64')
-        .toString('utf-8');
-
-      return JSON.parse(content);
-    } catch (error) {
-      throw error;
-    }
-  }
-
-  /**
    * Writes JSON data to a file in a repository
    * @param owner Repository owner
    * @param repo Repository name

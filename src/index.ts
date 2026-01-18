@@ -1,3 +1,4 @@
+import { schedule } from 'node-cron';
 import { GitHubClient } from './octokit';
 import { RepositoryDetails } from './interfaces';
 
@@ -5,78 +6,101 @@ import { RepositoryDetails } from './interfaces';
 async function main() {
 
 
-  const targetBranch = "main";
+  const targetBranch = "V3";
   const projectDelimiter = "---";
-  const targetFile = "output.txt";
+  const cronSchedule = "0 0 * * *";
   const packageRegex = /`([^`]+)`/g;
+  const repositoryOwner = "lxrbckl";
+  const targetFile = "data/automated.json";
   const targetRepository = "Project-Heimir";
   const languageRegex = /\*\*`([^`]+)`\*\*/g;
-  const commitMessage = "Add repository data output";
+  const commitMessage = "Project SelfStack - Automated Data Collection";
   const usernames = "lxrbckl, ala2q6".split(',').map(item => item.trim());
   const client = new GitHubClient("");
 
 
-  // Collect all repository names for each user
-  const allUsersRepositories: Record<string, string[]> = {};
+  schedule(cronSchedule, async () => {
+    try {
 
-  for (const u of usernames) {
-    const userRepositories: string[] = [];
+      // Collect all repository names for each user
+      const allUsersRepositories: Record<string, string[]> = {};
 
-    const personalRepos = await client.getUserRepositoryNames(u);
-    userRepositories.push(...personalRepos);
+      for (const u of usernames) {
+        const userRepositories: string[] = [];
 
-    const organizations = await client.getUserOrganizationNames(u);
+        const personalRepos = await client.getUserRepositoryNames(u);
+        userRepositories.push(...personalRepos);
 
-    for (const organization of organizations) {
-      const orgRepos = await client.getUserRepositoriesInOrganization(u, organization);
-      userRepositories.push(...orgRepos);
-    }
+        const organizations = await client.getUserOrganizationNames(u);
 
-    allUsersRepositories[u] = userRepositories;
-  }
-
-  // Fetch detailed information for each repository
-  const detailedRepositoryData: Record<string, Record<string, RepositoryDetails>> = {};
-
-  for (const [username, repositories] of Object.entries(allUsersRepositories)) {
-    detailedRepositoryData[username] = {};
-
-    for (const repository of repositories) {
-      try {
-        const details = await client.getRepositoryInfo(username, repository);
-        if (details) {
-          const readmeParts = details.readme.split(projectDelimiter);
-          details.readme = readmeParts[0] || "";
-          detailedRepositoryData[username][repository] = details;
+        for (const organization of organizations) {
+          const orgRepos = await client.getUserRepositoriesInOrganization(u, organization);
+          userRepositories.push(...orgRepos);
         }
-      } catch (error) {
-        continue;
-      }
-    }
-  }
 
-  // Extract **`Language`** and `Package` from READMEs using regex
-  const techStack = {language: new Set<string>(), package: new Set<string>()};
-
-  for (const [username, repositories] of Object.entries(detailedRepositoryData)) {
-    for (const [repoName, repoDetails] of Object.entries(repositories)) {
-      const readme = repoDetails.readme;
-
-      let languageMatch;
-      while ((languageMatch = languageRegex.exec(readme)) !== null) {
-        techStack.language.add(languageMatch[1].trim());
+        allUsersRepositories[u] = userRepositories;
       }
 
-      let packageMatch;
-      while ((packageMatch = packageRegex.exec(readme)) !== null) {
-        const packageName = packageMatch[1].trim();
-        if (!techStack.language.has(packageName)) {
-          techStack.package.add(packageName);
+      // Fetch detailed information for each repository
+      const repositories: Record<string, Record<string, RepositoryDetails>> = {};
+
+      for (const [u, r] of Object.entries(allUsersRepositories)) {
+        repositories[u] = {};
+
+        for (const repository of r) {
+          try {
+            const details = await client.getRepositoryInfo(u, repository);
+            if (details) {
+              const readmeParts = details.readme.split(projectDelimiter);
+              details.readme = readmeParts[0] || "";
+              repositories[u][repository] = details;
+            }
+          } catch (error) {
+            continue;
+          }
         }
       }
-    }
-  }
 
+      // Extract **`Language`** and `Package` from READMEs using regex
+      const techStack = {language: new Set<string>(), package: new Set<string>()};
+
+      for (const [u, r] of Object.entries(repositories)) {
+        for (const [rName, rDetails] of Object.entries(r)) {
+          const readme = rDetails.readme;
+
+          let languageMatch;
+          while ((languageMatch = languageRegex.exec(readme)) !== null) {
+            techStack.language.add(languageMatch[1].trim());
+          }
+
+          let packageMatch;
+          while ((packageMatch = packageRegex.exec(readme)) !== null) {
+            const packageName = packageMatch[1].trim();
+            if (!techStack.language.has(packageName)) {
+              techStack.package.add(packageName);
+            }
+          }
+        }
+      }
+
+      // Write the compiled data to the target repository
+      await client.writeFileContents(
+        repositoryOwner,
+        targetRepository,
+        targetFile,
+        {
+          repositories: repositories,
+          languages: Array.from(techStack.language),
+          packages: Array.from(techStack.package)
+        },
+        targetBranch,
+        commitMessage
+      );
+
+    } catch (error) {
+      console.error(error);
+    }
+  });
 
 }
 

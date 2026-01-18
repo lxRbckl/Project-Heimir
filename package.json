@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/lxrbckl-dev/Project-Heimir#readme",
   "dependencies": {
+    "node-cron": "^4.2.1",
     "octokit": "^5.0.5"
   },
   "devDependencies": {
