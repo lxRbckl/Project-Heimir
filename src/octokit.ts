@@ -1,5 +1,5 @@
 import { Octokit } from 'octokit';
-import { RepositoryInfo } from './interfaces';
+import { RepositoryInfo } from './interfaces.js';
 
 export class GitHubClient {
   private octokit: Octokit;

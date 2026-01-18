@@ -1,6 +1,6 @@
 import { schedule } from 'node-cron';
-import { GitHubClient } from './octokit';
-import { RepositoryDetails } from './interfaces';
+import { GitHubClient } from './octokit.js';
+import { RepositoryDetails } from './interfaces.js';
 
 
 async function main() {
