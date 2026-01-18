@@ -53,8 +53,10 @@ async function main() {
             const details = await client.getRepositoryInfo(u, repository);
             if (details) {
               const readmeParts = details.readme.split(projectDelimiter);
-              details.readme = readmeParts[0] || "";
-              repositories[u][repository] = details;
+              if (readmeParts.length > 1) {
+                details.readme = readmeParts[0];
+                repositories[u][repository] = details;
+              }
             }
           } catch (error) {
             continue;
