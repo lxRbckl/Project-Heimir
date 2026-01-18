@@ -15,6 +15,7 @@ npm start
 ### Remote Deployment
 ```bash
 docker run \
+  -d \
   --name selfstack \
   --restart unless-stopped \
   -e TARGET_BRANCH=V3 \
