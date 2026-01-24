@@ -6,6 +6,10 @@
 
    ],
    "tools" : [
-
+      "Visual Studio",
+      "JetBrains Suite",
+      "Visual Studio Code",
+      "Cursor",
+      "LINQPad"
    ]
 }
