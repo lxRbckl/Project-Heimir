@@ -68,7 +68,7 @@
       },
       "Project-MadGarden": {
         "readme": "# Project MadGarden 1\n> Autonomously develop and display your tech stack network from the tools used in your repositories. Summer 2024.\n> \n> **`TypeScript`** **`Docker`** `octokit` `node-cron` `axios` `github-actions` `json`\n\n",
-        "branchCount": 2,
+        "branchCount": 1,
         "repositoryUrl": "https://github.com/lxrbckl-dev/Project-MadGarden"
       },
       "Project-FlyingGitman": {
