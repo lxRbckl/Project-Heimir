@@ -1,11 +1,10 @@
 {
-   "languages & systems" : [
+   "languages" : [
+   ],
+   "packages" : [
       "Next.js",
       "shadcn/ui",
       "React"
-   ],
-   "packages" : [
-
    ],
    "tools" : [
       "Visual Studio",
