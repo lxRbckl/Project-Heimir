@@ -195,8 +195,7 @@ export class GitHubClient {
 
       return {
         readme: readmeContent,
-        url: repoResponse.data.html_url,
-        branchCount: totalBranches.length
+        url: repoResponse.data.html_url
       };
     } catch (error) {
       throw error;

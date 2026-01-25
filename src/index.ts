@@ -72,8 +72,7 @@ async function main() {
                   title: title,
                   stack: stack,
                   url: details.url,
-                  description: description,
-                  iteration: details.branchCount
+                  description: description
                 };
 
               }

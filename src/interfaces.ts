@@ -1,13 +1,11 @@
 export interface RepositoryDetails {
+  url: string;
   title: string;
   stack: string;
-  iteration: number;
   description: string;
-  url: string;
 }
 
 export interface RepositoryInfo {
-  readme: string;
-  branchCount: number;
   url: string;
+  readme: string;
 }
