@@ -15,9 +15,13 @@ export class GitHubClient {
   }
 
   /**
-   * Gets all repository names for a given username
-   * @param username GitHub username
-   * @returns Array of repository names
+   * Gets all repository names owned by a given user.
+   * Fetches repositories across multiple pages (100 per page) until all are retrieved.
+   * Only returns repositories where the user is the owner (not forks or collaborations).
+   * 
+   * @param username GitHub username to fetch repositories for
+   * @returns Promise resolving to an array of repository names
+   * @throws Error if the API request fails
    */
   async getUserRepositoryNames(username: string): Promise<string[]> {
     try {
@@ -47,9 +51,12 @@ export class GitHubClient {
   }
 
   /**
-   * Gets all organization names for a given username
-   * @param username GitHub username
-   * @returns Array of organization names
+   * Gets all organization names that a user belongs to.
+   * Fetches organizations across multiple pages (100 per page) until all are retrieved.
+   * 
+   * @param username GitHub username to fetch organizations for
+   * @returns Promise resolving to an array of organization names (login names)
+   * @throws Error if the API request fails
    */
   async getUserOrganizationNames(username: string): Promise<string[]> {
     try {
@@ -77,10 +84,14 @@ export class GitHubClient {
   }
 
   /**
-   * Gets all repositories in an organization that a user has contributed to
-   * @param username GitHub username
-   * @param organization Organization name
-   * @returns Array of repository names
+   * Gets all repositories in an organization where the user has collaborator access.
+   * First fetches all repositories in the organization, then filters to only those
+   * where the user has collaborator permissions (read, write, or admin access).
+   * 
+   * @param username GitHub username to check permissions for
+   * @param organization Organization name to fetch repositories from
+   * @returns Promise resolving to an array of repository names where the user has access
+   * @throws Error if the API request fails
    */
   async getUserRepositoriesInOrganization(
     username: string,
@@ -125,10 +136,17 @@ export class GitHubClient {
   }
 
   /**
-   * Gets detailed information about a repository including README and branch count
+   * Gets detailed information about a repository including README and branch count.
+   * Fetches repository metadata, README content (base64 decoded), and all branches.
+   * 
+   * Returns null if:
+   * - The repository is private
+   * - The repository name matches the username (profile README)
+   * 
    * @param username Repository owner username
    * @param repository Repository name
-   * @returns Repository information or null if private/invalid
+   * @returns Promise resolving to RepositoryInfo object or null if repository is private/invalid
+   * @throws Error if the API request fails (e.g., repository doesn't exist or no access)
    */
   async getRepositoryInfo(
     username: string,
@@ -155,7 +173,7 @@ export class GitHubClient {
 
       let page = 1;
       let hasMorePages = true;
-      const allBranches: any[] = [];
+      const totalBranches: any[] = [];
 
       while (hasMorePages) {
         const branchesResponse = await this.octokit.rest.repos.listBranches({
@@ -165,7 +183,7 @@ export class GitHubClient {
           page,
         });
 
-        allBranches.push(...branchesResponse.data);
+        totalBranches.push(...branchesResponse.data);
 
         hasMorePages = branchesResponse.data.length === 100;
         page++;
@@ -177,8 +195,8 @@ export class GitHubClient {
 
       return {
         readme: readmeContent,
-        branchCount: allBranches.length,
-        repositoryUrl: repoResponse.data.html_url,
+        url: repoResponse.data.html_url,
+        branchCount: totalBranches.length
       };
     } catch (error) {
       throw error;
@@ -186,13 +204,20 @@ export class GitHubClient {
   }
 
   /**
-   * Writes JSON data to a file in a repository
-   * @param owner Repository owner
+   * Writes JSON data to a file in a repository.
+   * Creates a new file or updates an existing file if it already exists.
+   * The data is stringified with 2-space indentation for readability.
+   * 
+   * If the file already exists, it will be updated (requires the file's SHA).
+   * If the file doesn't exist, it will be created.
+   * 
+   * @param owner Repository owner username
    * @param repo Repository name
-   * @param path File path within the repository
-   * @param data Data to write as JSON
-   * @param branch Branch name
-   * @param commitMessage Commit message
+   * @param path File path within the repository (e.g., 'data/repositories.json')
+   * @param data Data object to write as JSON
+   * @param branch Branch name to commit to
+   * @param commitMessage Commit message for the file update
+   * @throws Error if the API request fails or file cannot be written
    */
   async writeFileContents(
     owner: string,

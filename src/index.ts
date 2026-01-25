@@ -3,24 +3,31 @@ import { GitHubClient } from './octokit.js';
 import { RepositoryDetails } from './interfaces.js';
 
 
+enum Regex {
+  NEWLINE = "\n",
+  PROJECT = "---",
+  HEADER = "#\\s?",
+  INDENT = ">\\s?",
+  PACKAGE = "`([^`]+)`",
+  LANGUAGE = "\\*\\*`([^`]+)`\\*\\*"
+}
+
+
 async function main() {
 
 
   const client = new GitHubClient(process.env.GITHUB_TOKEN!);
 
-  const projectDelimiter = '---';
   const targetFile = process.env.TARGET_FILE!;
   const targetBranch = process.env.TARGET_BRANCH!;
   const cronSchedule = process.env.CRON_SCHEDULE!;
-  const packageRegex = new RegExp('`([^`]+)`', 'g');
   const commitMessage = process.env.COMMIT_MESSAGE!;
   const repositoryOwner = process.env.REPOSITORY_OWNER!;
   const targetRepository = process.env.TARGET_REPOSITORY!;
-  const languageRegex = new RegExp('\\*\\*`([^`]+)`\\*\\*', 'g');
   const usernames = process.env.USERNAMES!.split(',').map(item => item.trim());
 
 
-  schedule(cronSchedule, async () => {
+  async function processRepositories() {
     try {
 
       // Collect all repository names for each user
@@ -52,10 +59,25 @@ async function main() {
           try {
             const details = await client.getRepositoryInfo(u, repository);
             if (details) {
-              const readmeParts = details.readme.split(projectDelimiter);
+              
+              const readmeParts = details.readme
+                .replace(new RegExp(Regex.INDENT, 'g'), "")
+                .replace(new RegExp(Regex.HEADER, 'g'), "")
+                .split(Regex.PROJECT)
+                [0]
+                ;
+              
               if (readmeParts.length > 1) {
-                details.readme = readmeParts[0];
-                repositories[u][repository] = details;
+
+                const [title, description, stack] = readmeParts.split(Regex.NEWLINE);
+                repositories[u][repository] = {
+                  title: title,
+                  stack: stack,
+                  description: description,
+                  iteration: details.branchCount,
+                  url: details.url,
+                };
+
               }
             }
           } catch (error) {
@@ -69,15 +91,17 @@ async function main() {
 
       for (const [u, r] of Object.entries(repositories)) {
         for (const [rName, rDetails] of Object.entries(r)) {
-          const readme = rDetails.readme;
+          const stack = rDetails.stack;
 
           let languageMatch;
-          while ((languageMatch = languageRegex.exec(readme)) !== null) {
+          const languageRegex = new RegExp(Regex.LANGUAGE, 'g');
+          while ((languageMatch = languageRegex.exec(stack)) !== null) {
             techStack.language.add(languageMatch[1].trim());
           }
 
           let packageMatch;
-          while ((packageMatch = packageRegex.exec(readme)) !== null) {
+          const packageRegex = new RegExp(Regex.PACKAGE, 'g');
+          while ((packageMatch = packageRegex.exec(stack)) !== null) {
             const packageName = packageMatch[1].trim();
             if (!techStack.language.has(packageName)) {
               techStack.package.add(packageName);
@@ -103,6 +127,11 @@ async function main() {
     } catch (error) {
       console.error(error);
     }
+  }
+
+  await processRepositories();
+  schedule(cronSchedule, async () => {
+    await processRepositories();
   });
 
 }
