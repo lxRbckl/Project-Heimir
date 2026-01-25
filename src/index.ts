@@ -110,7 +110,7 @@ async function main() {
         }
       }
 
-      // Write the compiled data to the target repository
+      // Write the compiled data to target repository
       await client.writeFileContents(
         repositoryOwner,
         targetRepository,
