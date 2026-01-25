@@ -50,11 +50,9 @@ async function main() {
       }
 
       // Fetch detailed information for each repository
-      const repositories: Record<string, Record<string, RepositoryDetails>> = {};
+      const repositories: Record<string, RepositoryDetails> = {};
 
       for (const [u, r] of Object.entries(allUsersRepositories)) {
-        repositories[u] = {};
-
         for (const repository of r) {
           try {
             const details = await client.getRepositoryInfo(u, repository);
@@ -70,12 +68,12 @@ async function main() {
               if (readmeParts.length > 1) {
 
                 const [title, description, stack] = readmeParts.split(Regex.NEWLINE);
-                repositories[u][repository] = {
+                repositories[repository] = {
                   title: title,
                   stack: stack,
-                  description: description,
-                  iteration: details.branchCount,
                   url: details.url,
+                  description: description,
+                  iteration: details.branchCount
                 };
 
               }
@@ -89,23 +87,21 @@ async function main() {
       // Extract **`Language`** and `Package` from READMEs using regex
       const techStack = {language: new Set<string>(), package: new Set<string>()};
 
-      for (const [u, r] of Object.entries(repositories)) {
-        for (const [rName, rDetails] of Object.entries(r)) {
-          const stack = rDetails.stack;
+      for (const [rName, rDetails] of Object.entries(repositories)) {
+        const stack = rDetails.stack;
 
-          let languageMatch;
-          const languageRegex = new RegExp(Regex.LANGUAGE, 'g');
-          while ((languageMatch = languageRegex.exec(stack)) !== null) {
-            techStack.language.add(languageMatch[1].trim());
-          }
+        let languageMatch;
+        const languageRegex = new RegExp(Regex.LANGUAGE, 'g');
+        while ((languageMatch = languageRegex.exec(stack)) !== null) {
+          techStack.language.add(languageMatch[1].trim());
+        }
 
-          let packageMatch;
-          const packageRegex = new RegExp(Regex.PACKAGE, 'g');
-          while ((packageMatch = packageRegex.exec(stack)) !== null) {
-            const packageName = packageMatch[1].trim();
-            if (!techStack.language.has(packageName)) {
-              techStack.package.add(packageName);
-            }
+        let packageMatch;
+        const packageRegex = new RegExp(Regex.PACKAGE, 'g');
+        while ((packageMatch = packageRegex.exec(stack)) !== null) {
+          const packageName = packageMatch[1].trim();
+          if (!techStack.language.has(packageName)) {
+            techStack.package.add(packageName);
           }
         }
       }
