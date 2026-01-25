@@ -2,156 +2,216 @@
   "repositories": {
     "lxrbckl": {
       "Project-Maximus": {
-        "readme": "# Project Maximus 2\n> Use a Raspberry Pi to capture and record the stream of many USB camera(s) and interact with relay devices in a mobile environment. Fall 2024.\n>\n> **`Shell`** **`Python`** `RPi.GPIO` `sys`\n\n",
-        "branchCount": 2,
-        "repositoryUrl": "https://github.com/lxrbckl-dev/Project-Maximus"
+        "title": "Project Maximus 2",
+        "stack": "**`Shell`** **`Python`** `RPi.GPIO` `sys`",
+        "description": "Use a Raspberry Pi to capture and record the stream of many USB camera(s) and interact with relay devices in a mobile environment. Fall 2024.",
+        "iteration": 2,
+        "url": "https://github.com/lxrbckl-dev/Project-Maximus"
       },
       "Project-Domum": {
-        "readme": "# Project Domum\n> Manage power outlets by utilizing the GPIO pins of a Raspberry Pi. Spring 2021.\n>\n> **`Python`** `suntime` `RPi.GPIO` `asyncio` `discordpy` `datetime` `json`\n\n",
-        "branchCount": 1,
-        "repositoryUrl": "https://github.com/lxrbckl-dev/Project-Domum"
+        "title": "Project Domum",
+        "stack": "**`Python`** `suntime` `RPi.GPIO` `asyncio` `discordpy` `datetime` `json`",
+        "description": "Manage power outlets by utilizing the GPIO pins of a Raspberry Pi. Spring 2021.",
+        "iteration": 1,
+        "url": "https://github.com/lxrbckl-dev/Project-Domum"
       },
       "Project-WS3K": {
-        "readme": "# Project WS3K\n> Get alerted when a Discord user starts typing in a specific Discord channel. Spring 2021.\n>\n> **`Python`** `discordpy` `selenium` `time` `asyncio` `json`\n\n",
-        "branchCount": 1,
-        "repositoryUrl": "https://github.com/lxrbckl-dev/Project-WS3K"
+        "title": "Project WS3K",
+        "stack": "**`Python`** `discordpy` `selenium` `time` `asyncio` `json`",
+        "description": "Get alerted when a Discord user starts typing in a specific Discord channel. Spring 2021.",
+        "iteration": 1,
+        "url": "https://github.com/lxrbckl-dev/Project-WS3K"
       },
       "Project-Comperio": {
-        "readme": "# Project Comperio\n> Social network analysis tool for Instagram. Spring 2020. Discontinued.\n>\n> **`Python`** `os` `time` `discordpy` `selenium` `xlwt` `xlrd` `xlutils`\n\n",
-        "branchCount": 1,
-        "repositoryUrl": "https://github.com/lxrbckl-dev/Project-Comperio"
+        "title": "Project Comperio",
+        "stack": "**`Python`** `os` `time` `discordpy` `selenium` `xlwt` `xlrd` `xlutils`",
+        "description": "Social network analysis tool for Instagram. Spring 2020. Discontinued.",
+        "iteration": 1,
+        "url": "https://github.com/lxrbckl-dev/Project-Comperio"
       },
       "Project-Kinma": {
-        "readme": "# Project Kinma 2\n> Create scheduled backups of all your GitHub repositories to a local directory. Fall 2023.\n>\n> **`JavaScript`** **`Docker`** `octokit` `discordjs` `node-cron` `axios`\n\n\n\n",
-        "branchCount": 2,
-        "repositoryUrl": "https://github.com/lxrbckl-dev/Project-Kinma"
+        "title": "Project Kinma 2",
+        "stack": "**`JavaScript`** **`Docker`** `octokit` `discordjs` `node-cron` `axios`",
+        "description": "Create scheduled backups of all your GitHub repositories to a local directory. Fall 2023.",
+        "iteration": 2,
+        "url": "https://github.com/lxrbckl-dev/Project-Kinma"
       },
       "Project-RCoD": {
-        "readme": "# Project RCoD 3\n> *Return Calls on Discord.* Reconnect to dropped Discord calls on Retina displays. Spring 2024.\n>\n> **`Python`** `poetry` `sys` `time` `discordpy` `open-ai` `os` `opencv-python`\n\n",
-        "branchCount": 3,
-        "repositoryUrl": "https://github.com/lxrbckl-dev/Project-RCoD"
+        "title": "Project RCoD 3",
+        "stack": "**`Python`** `poetry` `sys` `time` `discordpy` `open-ai` `os` `opencv-python`",
+        "description": "*Return Calls on Discord.* Reconnect to dropped Discord calls on Retina displays. Spring 2024.",
+        "iteration": 3,
+        "url": "https://github.com/lxrbckl-dev/Project-RCoD"
       },
       "Project-ASBC": {
-        "readme": "# Project ASBC\n> Automated surveillance for Blink Cameras. Leverage automation and artificial intelligence for monitoring and object detection of Blink camera footage. Summer 2023.\n>\n> **`Python`** **`Shell`** `poetry` `dash` `json` `dash-bootstrap-components` `asyncio` `discordpy` `os` `random` `pytorch` `PIL` `pyautogui`\n\n",
-        "branchCount": 1,
-        "repositoryUrl": "https://github.com/lxrbckl-dev/Project-ASBC"
+        "title": "Project ASBC",
+        "stack": "**`Python`** **`Shell`** `poetry` `dash` `json` `dash-bootstrap-components` `asyncio` `discordpy` `os` `random` `pytorch` `PIL` `pyautogui`",
+        "description": "Automated surveillance for Blink Cameras. Leverage automation and artificial intelligence for monitoring and object detection of Blink camera footage. Summer 2023.",
+        "iteration": 1,
+        "url": "https://github.com/lxrbckl-dev/Project-ASBC"
       },
       "Project-PasCam": {
-        "readme": "# Project PasCam 8\n> Encrypt and share passwords using a Discord bot. Spring 2024.\n>\n> **`JavaScript`** **`Docker`** `discordjs` `crypto` `git-hooks` `github-actions`\n\n",
-        "branchCount": 8,
-        "repositoryUrl": "https://github.com/lxrbckl-dev/Project-PasCam"
+        "title": "Project PasCam 8",
+        "stack": "**`JavaScript`** **`Docker`** `discordjs` `crypto` `git-hooks` `github-actions`",
+        "description": "Encrypt and share passwords using a Discord bot. Spring 2024.",
+        "iteration": 8,
+        "url": "https://github.com/lxrbckl-dev/Project-PasCam"
       },
       "Project-Fenaverat": {
-        "readme": "# Project Fenaverat 5\n> A website portfolio crafted to showcase details about yourself, your servers, and your projects. V5. Fall 2025.\n>\n> **`Python`** **`Docker`** **`CSS`** `dash` `dash-bootstrap-components` `dash-mantine-components` `flask` `gunicorn` `plotly` `json` `requests` `github-actions`\n\n",
-        "branchCount": 5,
-        "repositoryUrl": "https://github.com/lxrbckl-dev/Project-Fenaverat"
+        "title": "Project Fenaverat 5",
+        "stack": "**`Python`** **`Docker`** **`CSS`** `dash` `dash-bootstrap-components` `dash-mantine-components` `flask` `gunicorn` `plotly` `json` `requests` `github-actions`",
+        "description": "A website portfolio crafted to showcase details about yourself, your servers, and your projects. V5. Fall 2025.",
+        "iteration": 5,
+        "url": "https://github.com/lxrbckl-dev/Project-Fenaverat"
       },
       "Project-Acta-Mea": {
-        "readme": "# Project Acta Mea 6\n> CRUD management for servers and services featuring dockerode integration. Spring 2024. Discontinued.\n>\n> **`TypeScript`** **`Docker`** `dockerode` `axios` `json` `discordjs` `octokit` `github-actions`\n\n",
-        "branchCount": 6,
-        "repositoryUrl": "https://github.com/lxrbckl-dev/Project-Acta-Mea"
+        "title": "Project Acta Mea 6",
+        "stack": "**`TypeScript`** **`Docker`** `dockerode` `axios` `json` `discordjs` `octokit` `github-actions`",
+        "description": "CRUD management for servers and services featuring dockerode integration. Spring 2024. Discontinued.",
+        "iteration": 6,
+        "url": "https://github.com/lxrbckl-dev/Project-Acta-Mea"
       },
       "Project-JA": {
-        "readme": "# Project JA 4\n> Interact with the mystical conch shell, engage in weekly conversation prompts, and delegate decision-making. Fall 2024.\n>\n> **`TypeScript`** **`Docker`** `axios` `node-cron` `discordjs` `open-ai` `github-actions`\n\n",
-        "branchCount": 4,
-        "repositoryUrl": "https://github.com/lxrbckl-dev/Project-JA"
+        "title": "Project JA 4",
+        "stack": "**`TypeScript`** **`Docker`** `axios` `node-cron` `discordjs` `open-ai` `github-actions`",
+        "description": "Interact with the mystical conch shell, engage in weekly conversation prompts, and delegate decision-making. Fall 2024.",
+        "iteration": 4,
+        "url": "https://github.com/lxrbckl-dev/Project-JA"
       },
       "Project-UMKC": {
-        "readme": "# Project UMKC 2\n> Receive notifcations when classes are about to start. V2. Fall 2021.\n>\n> **`Python`** `os` `time` `asyncio` `json` `discordpy`\n\n",
-        "branchCount": 2,
-        "repositoryUrl": "https://github.com/lxrbckl-dev/Project-UMKC"
+        "title": "Project UMKC 2",
+        "stack": "**`Python`** `os` `time` `asyncio` `json` `discordpy`",
+        "description": "Receive notifcations when classes are about to start. V2. Fall 2021.",
+        "iteration": 2,
+        "url": "https://github.com/lxrbckl-dev/Project-UMKC"
       },
       "Project-ACLG": {
-        "readme": "# Project ACLG\n> *Automated Cover Letter/Resume Generator.* Spring 2024. Discontinued.\n>\n> **`Python`** **`CSS`** **`Docker`** **`Shell`** `poetry` `os` `reportlab` `json` `dash` `dash-bootstrap-components` `github-actions`\n\n",
-        "branchCount": 1,
-        "repositoryUrl": "https://github.com/lxrbckl-dev/Project-ACLG"
+        "title": "Project ACLG",
+        "stack": "**`Python`** **`CSS`** **`Docker`** **`Shell`** `poetry` `os` `reportlab` `json` `dash` `dash-bootstrap-components` `github-actions`",
+        "description": "*Automated Cover Letter/Resume Generator.* Spring 2024. Discontinued.",
+        "iteration": 1,
+        "url": "https://github.com/lxrbckl-dev/Project-ACLG"
       },
       "Project-MadGarden": {
-        "readme": "# Project MadGarden 1\n> Autonomously develop and display your tech stack network from the tools used in your repositories. Summer 2024.\n> \n> **`TypeScript`** **`Docker`** `octokit` `node-cron` `axios` `github-actions` `json`\n\n",
-        "branchCount": 1,
-        "repositoryUrl": "https://github.com/lxrbckl-dev/Project-MadGarden"
+        "title": "Project MadGarden 1",
+        "stack": "",
+        "description": "Autonomously develop and display your tech stack network from the tools used in your repositories. Summer 2024.",
+        "iteration": 1,
+        "url": "https://github.com/lxrbckl-dev/Project-MadGarden"
       },
       "Project-FlyingGitman": {
-        "readme": "# Project FlyingGitman\n> Automatically follow and unfollow GitHub users to build your network. Spring 2026.\n>\n> **`TypeScript`** **`Docker`** `node-cron` `octokit`\n\n",
-        "branchCount": 1,
-        "repositoryUrl": "https://github.com/lxrbckl-dev/Project-FlyingGitman"
+        "title": "Project FlyingGitman",
+        "stack": "**`TypeScript`** **`Docker`** `node-cron` `octokit`",
+        "description": "Automatically follow and unfollow GitHub users to build your network. Spring 2026.",
+        "iteration": 1,
+        "url": "https://github.com/lxrbckl-dev/Project-FlyingGitman"
       }
     },
     "ala2q6": {
       "CS461-P3": {
-        "readme": "# CS461 P3\n> University of Missouri - Kansas City: CS461: Project 3\n>\n> **`Python`**\n\n",
-        "branchCount": 1,
-        "repositoryUrl": "https://github.com/ala2q6/CS461-P3"
+        "title": "CS461 P3",
+        "stack": "**`Python`**",
+        "description": "University of Missouri - Kansas City: CS461: Project 3",
+        "iteration": 1,
+        "url": "https://github.com/ala2q6/CS461-P3"
       },
       "CS461-P2": {
-        "readme": "# CS461 P2\n> University of Missouri - Kansas City: CS461: Project 2\n>\n> **`Python`**\n\n",
-        "branchCount": 1,
-        "repositoryUrl": "https://github.com/ala2q6/CS461-P2"
+        "title": "CS461 P2",
+        "stack": "**`Python`**",
+        "description": "University of Missouri - Kansas City: CS461: Project 2",
+        "iteration": 1,
+        "url": "https://github.com/ala2q6/CS461-P2"
       },
       "HAR-S22": {
-        "readme": "# HAR S22\n> University of Missouri - Kansas City: Hack-A-Roo: Spring 2022\n>\n> **`Python`**\n\n",
-        "branchCount": 2,
-        "repositoryUrl": "https://github.com/ala2q6/HAR-S22"
+        "title": "HAR S22",
+        "stack": "**`Python`**",
+        "description": "University of Missouri - Kansas City: Hack-A-Roo: Spring 2022",
+        "iteration": 2,
+        "url": "https://github.com/ala2q6/HAR-S22"
       },
       "CS456-P": {
-        "readme": "# CS456 P\n> University of Missouri - Kansas City: CS456: Project\n>\n> **`Python`**\n\n",
-        "branchCount": 1,
-        "repositoryUrl": "https://github.com/ala2q6/CS456-P"
+        "title": "CS456 P",
+        "stack": "**`Python`**",
+        "description": "University of Missouri - Kansas City: CS456: Project",
+        "iteration": 1,
+        "url": "https://github.com/ala2q6/CS456-P"
       },
       "CS490DL-P": {
-        "readme": "# CS490DL P\n> University of Missouri - Kansas City: CS490 Deep Learning: Project\n>\n> **`Python`**\n\n",
-        "branchCount": 1,
-        "repositoryUrl": "https://github.com/ala2q6/CS490DL-P"
+        "title": "CS490DL P",
+        "stack": "**`Python`**",
+        "description": "University of Missouri - Kansas City: CS490 Deep Learning: Project",
+        "iteration": 1,
+        "url": "https://github.com/ala2q6/CS490DL-P"
       },
       "CS201R-P1": {
-        "readme": "# CS201R P1\n> University of Missouri - Kansas City: CS201R: Project 1\n>\n> **`C++`**\n\n",
-        "branchCount": 1,
-        "repositoryUrl": "https://github.com/ala2q6/CS201R-P1"
+        "title": "CS201R P1",
+        "stack": "**`C++`**",
+        "description": "University of Missouri - Kansas City: CS201R: Project 1",
+        "iteration": 1,
+        "url": "https://github.com/ala2q6/CS201R-P1"
       },
       "CS201R-P2": {
-        "readme": "# CS201R P2\n> University of Missouri - Kansas City: CS201R: Project 2\n>\n> **`C++`**\n\n",
-        "branchCount": 1,
-        "repositoryUrl": "https://github.com/ala2q6/CS201R-P2"
+        "title": "CS201R P2",
+        "stack": "**`C++`**",
+        "description": "University of Missouri - Kansas City: CS201R: Project 2",
+        "iteration": 1,
+        "url": "https://github.com/ala2q6/CS201R-P2"
       },
       "CS201R-P5": {
-        "readme": "# CS201R P5\n> University of Missouri - Kansas City: CS201R: Project 5\n>\n> **`C++`**\n\n",
-        "branchCount": 1,
-        "repositoryUrl": "https://github.com/ala2q6/CS201R-P5"
+        "title": "CS201R P5",
+        "stack": "**`C++`**",
+        "description": "University of Missouri - Kansas City: CS201R: Project 5",
+        "iteration": 1,
+        "url": "https://github.com/ala2q6/CS201R-P5"
       },
       "CS201R-P3": {
-        "readme": "# CS201R P3\n> University of Missouri - Kansas City: CS201R: Project 3\n>\n> **`C++`**\n\n",
-        "branchCount": 1,
-        "repositoryUrl": "https://github.com/ala2q6/CS201R-P3"
+        "title": "CS201R P3",
+        "stack": "**`C++`**",
+        "description": "University of Missouri - Kansas City: CS201R: Project 3",
+        "iteration": 1,
+        "url": "https://github.com/ala2q6/CS201R-P3"
       },
       "CS461-P1": {
-        "readme": "# CS461 P1\n> University of Missouri - Kansas City: CS461: Project 1\n>\n> **`Python`**\n\n",
-        "branchCount": 1,
-        "repositoryUrl": "https://github.com/ala2q6/CS461-P1"
+        "title": "CS461 P1",
+        "stack": "**`Python`**",
+        "description": "University of Missouri - Kansas City: CS461: Project 1",
+        "iteration": 1,
+        "url": "https://github.com/ala2q6/CS461-P1"
       },
       "CS303-P1": {
-        "readme": "# CS303 P1\n> University of Missouri - Kansas City: CS303: Project 1\n>\n> **`C++`**\n\n",
-        "branchCount": 1,
-        "repositoryUrl": "https://github.com/ala2q6/CS303-P1"
+        "title": "CS303 P1",
+        "stack": "**`C++`**",
+        "description": "University of Missouri - Kansas City: CS303: Project 1",
+        "iteration": 1,
+        "url": "https://github.com/ala2q6/CS303-P1"
       },
       "CS303-P2": {
-        "readme": "# CS303 P2\n> University of Missouri - Kansas City: CS303: Project 2\n>\n> **`C++`**\n\n",
-        "branchCount": 1,
-        "repositoryUrl": "https://github.com/ala2q6/CS303-P2"
+        "title": "CS303 P2",
+        "stack": "**`C++`**",
+        "description": "University of Missouri - Kansas City: CS303: Project 2",
+        "iteration": 1,
+        "url": "https://github.com/ala2q6/CS303-P2"
       },
       "CS201R-P4": {
-        "readme": "# CS201R P4\n> University of Missouri - Kansas City: CS201R: Project 4\n>\n> **`C++`**\n\n",
-        "branchCount": 1,
-        "repositoryUrl": "https://github.com/ala2q6/CS201R-P4"
+        "title": "CS201R P4",
+        "stack": "**`C++`**",
+        "description": "University of Missouri - Kansas City: CS201R: Project 4",
+        "iteration": 1,
+        "url": "https://github.com/ala2q6/CS201R-P4"
       },
       "CS441-P2": {
-        "readme": "# CS441 P2\n> University of Missouri - Kansas City: CS441: Project 2\n>\n> **`Clojure`**\n\n",
-        "branchCount": 1,
-        "repositoryUrl": "https://github.com/ala2q6/CS441-P2"
+        "title": "CS441 P2",
+        "stack": "**`Clojure`**",
+        "description": "University of Missouri - Kansas City: CS441: Project 2",
+        "iteration": 1,
+        "url": "https://github.com/ala2q6/CS441-P2"
       },
       "CS449-P": {
-        "readme": "# CS490DL P\n> University of Missouri - Kansas City: CS449: Project\n>\n> **`C#`**\n\n",
-        "branchCount": 1,
-        "repositoryUrl": "https://github.com/ala2q6/CS449-P"
+        "title": "CS490DL P",
+        "stack": "**`C`**",
+        "description": "University of Missouri - Kansas City: CS449: Project",
+        "iteration": 1,
+        "url": "https://github.com/ala2q6/CS449-P"
       }
     }
   },
@@ -164,7 +224,7 @@
     "TypeScript",
     "C++",
     "Clojure",
-    "C#"
+    "C"
   ],
   "packages": [
     "RPi.GPIO",
