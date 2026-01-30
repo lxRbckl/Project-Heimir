@@ -90,6 +90,12 @@
       "url": "https://github.com/lxrbckl-dev/Project-FlyingGitman",
       "description": "Automatically follow and unfollow GitHub users to build your network. Spring 2026."
     },
+    "CS449-P": {
+      "title": "CS449 P",
+      "stack": "**`C`**",
+      "url": "https://github.com/ala2q6/CS449-P",
+      "description": "University of Missouri - Kansas City: CS449: Project"
+    },
     "CS461-P3": {
       "title": "CS461 P3",
       "stack": "**`Python`**",
@@ -173,12 +179,6 @@
       "stack": "**`Clojure`**",
       "url": "https://github.com/ala2q6/CS441-P2",
       "description": "University of Missouri - Kansas City: CS441: Project 2"
-    },
-    "CS449-P": {
-      "title": "CS490DL P",
-      "stack": "**`C`**",
-      "url": "https://github.com/ala2q6/CS449-P",
-      "description": "University of Missouri - Kansas City: CS449: Project"
     }
   },
   "languages": [
@@ -188,9 +188,9 @@
     "Docker",
     "CSS",
     "TypeScript",
+    "C",
     "C++",
-    "Clojure",
-    "C"
+    "Clojure"
   ],
   "packages": [
     "RPi.GPIO",
