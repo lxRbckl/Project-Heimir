@@ -67,7 +67,9 @@ async function main() {
               
               if (readmeParts.length > 1) {
 
-                const [title, description, stack] = readmeParts.split(Regex.NEWLINE);
+                const [title, description, stack] = readmeParts
+                  .split(Regex.NEWLINE)
+                  .filter(line => line.trim() !== '');
                 repositories[repository] = {
                   title: title,
                   stack: stack,
