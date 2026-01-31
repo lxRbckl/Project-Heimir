@@ -30,80 +30,78 @@ async function main() {
   async function processRepositories() {
     try {
 
-      // Collect all repository names for each user
-      const allUsersRepositories: Record<string, string[]> = {};
+      // Collect all repositories with their owners
+      const allRepositories: {owner: string, repo: string}[] = [];
 
       for (const u of usernames) {
-        const userRepositories: string[] = [];
-
         const personalRepos = await client.getUserRepositoryNames(u);
-        userRepositories.push(...personalRepos);
+        for (const repo of personalRepos) {
+          allRepositories.push({owner: u, repo});
+        }
 
         const organizations = await client.getUserOrganizationNames(u);
 
         for (const organization of organizations) {
           const orgRepos = await client.getUserRepositoriesInOrganization(u, organization);
-          userRepositories.push(...orgRepos);
+          for (const repo of orgRepos) {
+            allRepositories.push({owner: organization, repo});
+          }
         }
-
-        allUsersRepositories[u] = userRepositories;
       }
 
       // Fetch detailed information for each repository
       const repositories: Record<string, RepositoryDetails> = {};
       const techStack = {language: new Set<string>(), package: new Set<string>()};
 
-      for (const [u, r] of Object.entries(allUsersRepositories)) {
-        for (const repository of r) {
-          try {
-            const details = await client.getRepositoryInfo(u, repository);
-            if (details) {
+      for (const {owner, repo} of allRepositories) {
+        try {
+          const details = await client.getRepositoryInfo(owner, repo);
+          if (details) {
 
-              const readmeParts = details.readme
-                .replace(new RegExp(Regex.INDENT, 'g'), "")
-                .replace(new RegExp(Regex.HEADER, 'g'), "")
-                .split(Regex.PROJECT)
-                [0]
-                ;
+            const readmeParts = details.readme
+              .replace(new RegExp(Regex.INDENT, 'g'), "")
+              .replace(new RegExp(Regex.HEADER, 'g'), "")
+              .split(Regex.PROJECT)
+              [0]
+              ;
 
-              if (readmeParts.length > 1) {
+            if (readmeParts.length > 1) {
 
-                const [title, description, stackLine] = readmeParts
-                  .split(Regex.NEWLINE)
-                  .filter(line => line.trim() !== '');
+              const [title, description, stackLine] = readmeParts
+                .split(Regex.NEWLINE)
+                .filter(line => line.trim() !== '');
 
-                // Extract languages (**`Language`**) and packages (`Package`)
-                const languages = new Set<string>();
-                const languageRegex = new RegExp(Regex.LANGUAGE, 'g');
-                let langMatch;
-                while ((langMatch = languageRegex.exec(stackLine || '')) !== null) {
-                  languages.add(langMatch[1].trim());
-                  techStack.language.add(langMatch[1].trim());
-                }
-
-                const stack: string[] = [];
-                const packageRegex = new RegExp(Regex.PACKAGE, 'g');
-                let match;
-                while ((match = packageRegex.exec(stackLine || '')) !== null) {
-                  const item = match[1].trim();
-                  stack.push(item);
-                  if (!languages.has(item)) {
-                    techStack.package.add(item);
-                  }
-                }
-
-                repositories[repository] = {
-                  title: title,
-                  stack: stack,
-                  url: details.url,
-                  description: description
-                };
-
+              // Extract languages (**`Language`**) and packages (`Package`)
+              const languages = new Set<string>();
+              const languageRegex = new RegExp(Regex.LANGUAGE, 'g');
+              let langMatch;
+              while ((langMatch = languageRegex.exec(stackLine || '')) !== null) {
+                languages.add(langMatch[1].trim());
+                techStack.language.add(langMatch[1].trim());
               }
+
+              const stack: string[] = [];
+              const packageRegex = new RegExp(Regex.PACKAGE, 'g');
+              let match;
+              while ((match = packageRegex.exec(stackLine || '')) !== null) {
+                const item = match[1].trim();
+                stack.push(item);
+                if (!languages.has(item)) {
+                  techStack.package.add(item);
+                }
+              }
+
+              repositories[repo] = {
+                title: title,
+                stack: stack,
+                url: details.url,
+                description: description
+              };
+
             }
-          } catch (error) {
-            continue;
           }
+        } catch (error) {
+          continue;
         }
       }
 
