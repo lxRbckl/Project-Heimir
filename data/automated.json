@@ -2,181 +2,409 @@
   "repositories": {
     "Project-Maximus": {
       "title": "Project Maximus 2",
-      "stack": "**`Shell`** **`Python`** `RPi.GPIO` `sys`",
+      "stack": [
+        "Shell",
+        "Python",
+        "RPi.GPIO",
+        "sys"
+      ],
       "url": "https://github.com/lxrbckl-dev/Project-Maximus",
       "description": "Use a Raspberry Pi to capture and record the stream of many USB camera(s) and interact with relay devices in a mobile environment. Fall 2024."
     },
     "Project-Domum": {
       "title": "Project Domum",
-      "stack": "**`Python`** `suntime` `RPi.GPIO` `asyncio` `discordpy` `datetime` `json`",
+      "stack": [
+        "Python",
+        "suntime",
+        "RPi.GPIO",
+        "asyncio",
+        "discordpy",
+        "datetime",
+        "json"
+      ],
       "url": "https://github.com/lxrbckl-dev/Project-Domum",
       "description": "Manage power outlets by utilizing the GPIO pins of a Raspberry Pi. Spring 2021."
     },
     "Project-WS3K": {
       "title": "Project WS3K",
-      "stack": "**`Python`** `discordpy` `selenium` `time` `asyncio` `json`",
+      "stack": [
+        "Python",
+        "discordpy",
+        "selenium",
+        "time",
+        "asyncio",
+        "json"
+      ],
       "url": "https://github.com/lxrbckl-dev/Project-WS3K",
       "description": "Get alerted when a Discord user starts typing in a specific Discord channel. Spring 2021."
     },
     "Project-Comperio": {
       "title": "Project Comperio",
-      "stack": "**`Python`** `os` `time` `discordpy` `selenium` `xlwt` `xlrd` `xlutils`",
+      "stack": [
+        "Python",
+        "os",
+        "time",
+        "discordpy",
+        "selenium",
+        "xlwt",
+        "xlrd",
+        "xlutils"
+      ],
       "url": "https://github.com/lxrbckl-dev/Project-Comperio",
       "description": "Social network analysis tool for Instagram. Spring 2020. Discontinued."
     },
+    "Project-SelfStack": {
+      "title": "Project SelfStack 3",
+      "stack": [
+        "TypeScript",
+        "Docker",
+        "node-cron",
+        "octokit"
+      ],
+      "url": "https://github.com/lxrbckl-dev/Project-SelfStack",
+      "description": "Scan repositories daily to extract and catalog technology stack information into a centralized data file. V3. Spring 2026."
+    },
     "Project-Kinma": {
       "title": "Project Kinma 2",
-      "stack": "**`JavaScript`** **`Docker`** `octokit` `discordjs` `node-cron` `axios`",
+      "stack": [
+        "JavaScript",
+        "Docker",
+        "octokit",
+        "discordjs",
+        "node-cron",
+        "axios"
+      ],
       "url": "https://github.com/lxrbckl-dev/Project-Kinma",
       "description": "Create scheduled backups of all your GitHub repositories to a local directory. Fall 2023."
     },
     "Project-RCoD": {
       "title": "Project RCoD 3",
-      "stack": "**`Python`** `poetry` `sys` `time` `discordpy` `open-ai` `os` `opencv-python`",
+      "stack": [
+        "Python",
+        "poetry",
+        "sys",
+        "time",
+        "discordpy",
+        "open-ai",
+        "os",
+        "opencv-python"
+      ],
       "url": "https://github.com/lxrbckl-dev/Project-RCoD",
       "description": "*Return Calls on Discord.* Reconnect to dropped Discord calls on Retina displays. Spring 2024."
     },
     "Project-ASBC": {
       "title": "Project ASBC",
-      "stack": "**`Python`** **`Shell`** `poetry` `dash` `json` `dash-bootstrap-components` `asyncio` `discordpy` `os` `random` `pytorch` `PIL` `pyautogui`",
+      "stack": [
+        "Python",
+        "Shell",
+        "poetry",
+        "dash",
+        "json",
+        "dash-bootstrap-components",
+        "asyncio",
+        "discordpy",
+        "os",
+        "random",
+        "pytorch",
+        "PIL",
+        "pyautogui"
+      ],
       "url": "https://github.com/lxrbckl-dev/Project-ASBC",
       "description": "Automated surveillance for Blink Cameras. Leverage automation and artificial intelligence for monitoring and object detection of Blink camera footage. Summer 2023."
     },
     "Project-PasCam": {
       "title": "Project PasCam 8",
-      "stack": "**`JavaScript`** **`Docker`** `discordjs` `crypto` `git-hooks` `github-actions`",
+      "stack": [
+        "JavaScript",
+        "Docker",
+        "discordjs",
+        "crypto",
+        "git-hooks",
+        "github-actions"
+      ],
       "url": "https://github.com/lxrbckl-dev/Project-PasCam",
       "description": "Encrypt and share passwords using a Discord bot. Spring 2024."
     },
     "Project-Fenaverat": {
       "title": "Project Fenaverat 5",
-      "stack": "**`Python`** **`Docker`** **`CSS`** `dash` `dash-bootstrap-components` `dash-mantine-components` `flask` `gunicorn` `plotly` `json` `requests` `github-actions`",
+      "stack": [
+        "Python",
+        "Docker",
+        "CSS",
+        "dash",
+        "dash-bootstrap-components",
+        "dash-mantine-components",
+        "flask",
+        "gunicorn",
+        "plotly",
+        "json",
+        "requests",
+        "github-actions"
+      ],
       "url": "https://github.com/lxrbckl-dev/Project-Fenaverat",
       "description": "A website portfolio crafted to showcase details about yourself, your servers, and your projects. V5. Fall 2025."
     },
     "Project-Acta-Mea": {
       "title": "Project Acta Mea 6",
-      "stack": "**`TypeScript`** **`Docker`** `dockerode` `axios` `json` `discordjs` `octokit` `github-actions`",
+      "stack": [
+        "TypeScript",
+        "Docker",
+        "dockerode",
+        "axios",
+        "json",
+        "discordjs",
+        "octokit",
+        "github-actions"
+      ],
       "url": "https://github.com/lxrbckl-dev/Project-Acta-Mea",
       "description": "CRUD management for servers and services featuring dockerode integration. Spring 2024. Discontinued."
     },
     "Project-JA": {
       "title": "Project JA 4",
-      "stack": "**`TypeScript`** **`Docker`** `axios` `node-cron` `discordjs` `open-ai` `github-actions`",
+      "stack": [
+        "TypeScript",
+        "Docker",
+        "axios",
+        "node-cron",
+        "discordjs",
+        "open-ai",
+        "github-actions"
+      ],
       "url": "https://github.com/lxrbckl-dev/Project-JA",
       "description": "Interact with the mystical conch shell, engage in weekly conversation prompts, and delegate decision-making. Fall 2024."
     },
     "Project-UMKC": {
       "title": "Project UMKC 2",
-      "stack": "**`Python`** `os` `time` `asyncio` `json` `discordpy`",
+      "stack": [
+        "Python",
+        "os",
+        "time",
+        "asyncio",
+        "json",
+        "discordpy"
+      ],
       "url": "https://github.com/lxrbckl-dev/Project-UMKC",
       "description": "Receive notifcations when classes are about to start. V2. Fall 2021."
     },
     "Project-ACLG": {
       "title": "Project ACLG",
-      "stack": "**`Python`** **`CSS`** **`Docker`** **`Shell`** `poetry` `os` `reportlab` `json` `dash` `dash-bootstrap-components` `github-actions`",
+      "stack": [
+        "Python",
+        "CSS",
+        "Docker",
+        "Shell",
+        "poetry",
+        "os",
+        "reportlab",
+        "json",
+        "dash",
+        "dash-bootstrap-components",
+        "github-actions"
+      ],
       "url": "https://github.com/lxrbckl-dev/Project-ACLG",
       "description": "*Automated Cover Letter/Resume Generator.* Spring 2024. Discontinued."
     },
     "Project-MadGarden": {
       "title": "Project MadGarden",
-      "stack": "",
+      "stack": [
+        "TypeScript",
+        "Docker",
+        "octokit",
+        "node-cron",
+        "axios",
+        "github-actions",
+        "json"
+      ],
       "url": "https://github.com/lxrbckl-dev/Project-MadGarden",
       "description": "Autonomously develop and display your tech stack network from the tools used in your repositories. Summer 2024."
     },
     "Project-FlyingGitman": {
       "title": "Project FlyingGitman",
-      "stack": "**`TypeScript`** **`Docker`** `node-cron` `octokit`",
+      "stack": [
+        "TypeScript",
+        "Docker",
+        "node-cron",
+        "octokit"
+      ],
       "url": "https://github.com/lxrbckl-dev/Project-FlyingGitman",
       "description": "Automatically follow and unfollow GitHub users to build your network. Spring 2026."
     },
+    "Project-AuTester": {
+      "title": "Project AuTester",
+      "stack": [
+        "Python",
+        "CSS",
+        "dash",
+        "time",
+        "dash-bootstrap-components",
+        "re",
+        "clipboard",
+        "json",
+        "os",
+        "dash-mantine-components",
+        "dash-iconify",
+        "logger",
+        "pytesseract",
+        "pygetwindow",
+        "pyautogui",
+        "functools"
+      ],
+      "url": "https://github.com/lxrbckl-dev/Project-AuTester",
+      "description": "Create scripts to emulate digital human interactivity. Spring 2025. Proof of concept."
+    },
+    "portfolio": {
+      "title": "portfolio",
+      "stack": [
+        "TypeScript",
+        "Docker",
+        "CSS",
+        "next-js",
+        "tailwind",
+        "radix-ui",
+        "github-actions"
+      ],
+      "url": "https://github.com/lxrbckl-dev/portfolio",
+      "description": "A forked portfolio website, containerized to work on a local server with pipelines. Fall 2025."
+    },
+    ".github": {
+      "title": "`.github/workflows/dockerhub-build-push.yml`",
+      "stack": [],
+      "url": "https://github.com/lxrbckl-dev/.github",
+      "description": "```yml"
+    },
+    "reactive-resume": {
+      "title": "reactive-resume",
+      "stack": [
+        "TypeScript",
+        "React",
+        "TanStack Start",
+        "Vite",
+        "Tailwind CSS",
+        "PostgreSQL",
+        "Drizzle",
+        "Better Auth",
+        "oRPC"
+      ],
+      "url": "https://github.com/lxrbckl-dev/reactive-resume",
+      "description": "A forked, stable release of reactive-resume, for the sake of consistency. Spring 2026."
+    },
     "CS449-P": {
       "title": "CS449 P",
-      "stack": "**`C`**",
+      "stack": [
+        "C#"
+      ],
       "url": "https://github.com/ala2q6/CS449-P",
       "description": "University of Missouri - Kansas City: CS449: Project"
     },
     "CS461-P3": {
       "title": "CS461 P3",
-      "stack": "**`Python`**",
+      "stack": [
+        "Python"
+      ],
       "url": "https://github.com/ala2q6/CS461-P3",
       "description": "University of Missouri - Kansas City: CS461: Project 3"
     },
     "CS461-P2": {
       "title": "CS461 P2",
-      "stack": "**`Python`**",
+      "stack": [
+        "Python"
+      ],
       "url": "https://github.com/ala2q6/CS461-P2",
       "description": "University of Missouri - Kansas City: CS461: Project 2"
     },
     "HAR-S22": {
       "title": "HAR S22",
-      "stack": "**`Python`**",
+      "stack": [
+        "Python"
+      ],
       "url": "https://github.com/ala2q6/HAR-S22",
       "description": "University of Missouri - Kansas City: Hack-A-Roo: Spring 2022"
     },
     "CS456-P": {
       "title": "CS456 P",
-      "stack": "**`Python`**",
+      "stack": [
+        "Python"
+      ],
       "url": "https://github.com/ala2q6/CS456-P",
       "description": "University of Missouri - Kansas City: CS456: Project"
     },
     "CS490DL-P": {
       "title": "CS490DL P",
-      "stack": "**`Python`**",
+      "stack": [
+        "Python"
+      ],
       "url": "https://github.com/ala2q6/CS490DL-P",
       "description": "University of Missouri - Kansas City: CS490 Deep Learning: Project"
     },
     "CS201R-P1": {
       "title": "CS201R P1",
-      "stack": "**`C++`**",
+      "stack": [
+        "C++"
+      ],
       "url": "https://github.com/ala2q6/CS201R-P1",
       "description": "University of Missouri - Kansas City: CS201R: Project 1"
     },
     "CS201R-P2": {
       "title": "CS201R P2",
-      "stack": "**`C++`**",
+      "stack": [
+        "C++"
+      ],
       "url": "https://github.com/ala2q6/CS201R-P2",
       "description": "University of Missouri - Kansas City: CS201R: Project 2"
     },
     "CS201R-P5": {
       "title": "CS201R P5",
-      "stack": "**`C++`**",
+      "stack": [
+        "C++"
+      ],
       "url": "https://github.com/ala2q6/CS201R-P5",
       "description": "University of Missouri - Kansas City: CS201R: Project 5"
     },
     "CS201R-P3": {
       "title": "CS201R P3",
-      "stack": "**`C++`**",
+      "stack": [
+        "C++"
+      ],
       "url": "https://github.com/ala2q6/CS201R-P3",
       "description": "University of Missouri - Kansas City: CS201R: Project 3"
     },
     "CS461-P1": {
       "title": "CS461 P1",
-      "stack": "**`Python`**",
+      "stack": [
+        "Python"
+      ],
       "url": "https://github.com/ala2q6/CS461-P1",
       "description": "University of Missouri - Kansas City: CS461: Project 1"
     },
     "CS303-P1": {
       "title": "CS303 P1",
-      "stack": "**`C++`**",
+      "stack": [
+        "C++"
+      ],
       "url": "https://github.com/ala2q6/CS303-P1",
       "description": "University of Missouri - Kansas City: CS303: Project 1"
     },
     "CS303-P2": {
       "title": "CS303 P2",
-      "stack": "**`C++`**",
+      "stack": [
+        "C++"
+      ],
       "url": "https://github.com/ala2q6/CS303-P2",
       "description": "University of Missouri - Kansas City: CS303: Project 2"
     },
     "CS201R-P4": {
       "title": "CS201R P4",
-      "stack": "**`C++`**",
+      "stack": [
+        "C++"
+      ],
       "url": "https://github.com/ala2q6/CS201R-P4",
       "description": "University of Missouri - Kansas City: CS201R: Project 4"
     },
     "CS441-P2": {
       "title": "CS441 P2",
-      "stack": "**`Clojure`**",
+      "stack": [
+        "Clojure"
+      ],
       "url": "https://github.com/ala2q6/CS441-P2",
       "description": "University of Missouri - Kansas City: CS441: Project 2"
     }
@@ -184,11 +412,11 @@
   "languages": [
     "Shell",
     "Python",
-    "JavaScript",
-    "Docker",
-    "CSS",
     "TypeScript",
-    "C",
+    "Docker",
+    "JavaScript",
+    "CSS",
+    "C#",
     "C++",
     "Clojure"
   ],
@@ -206,9 +434,9 @@
     "xlwt",
     "xlrd",
     "xlutils",
+    "node-cron",
     "octokit",
     "discordjs",
-    "node-cron",
     "axios",
     "poetry",
     "open-ai",
@@ -228,6 +456,24 @@
     "plotly",
     "requests",
     "dockerode",
-    "reportlab"
+    "reportlab",
+    "re",
+    "clipboard",
+    "dash-iconify",
+    "logger",
+    "pytesseract",
+    "pygetwindow",
+    "functools",
+    "next-js",
+    "tailwind",
+    "radix-ui",
+    "React",
+    "TanStack Start",
+    "Vite",
+    "Tailwind CSS",
+    "PostgreSQL",
+    "Drizzle",
+    "Better Auth",
+    "oRPC"
   ]
 }
