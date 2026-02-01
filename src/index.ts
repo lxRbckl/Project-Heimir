@@ -6,7 +6,7 @@ import { RepositoryDetails } from './interfaces.js';
 enum Regex {
   NEWLINE = "\n",
   PROJECT = "---",
-  HEADER = "#\\s?",
+  HEADER = "^#+\\s?",
   INDENT = ">\\s?",
   PACKAGE = "`([^`]+)`",
   LANGUAGE = "\\*\\*`([^`]+)`\\*\\*"
@@ -60,7 +60,7 @@ async function main() {
 
             const readmeParts = details.readme
               .replace(new RegExp(Regex.INDENT, 'g'), "")
-              .replace(new RegExp(Regex.HEADER, 'g'), "")
+              .replace(new RegExp(Regex.HEADER, 'gm'), "")
               .split(Regex.PROJECT)
               [0]
               ;
