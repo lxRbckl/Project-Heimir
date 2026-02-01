@@ -1,7 +1,7 @@
 export interface RepositoryDetails {
   url: string;
   title: string;
-  stack: string;
+  stack: string[];
   description: string;
 }
 
