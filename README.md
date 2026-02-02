@@ -25,7 +25,7 @@ docker run \
   -e TARGET_REPOSITORY=Project-SelfStack \
   -e COMMIT_MESSAGE="Project SelfStack - Automated Data Collection" \
   -e USERNAMES="lxrbckl, ala2q6" \
-  -e GITHUB_TOKEN=<your-token-here> \
+  -e GITHUB_TOKEN=<insert-here> \
   lxrbckl/project-selfstack:v3
 ```
 

@@ -195,10 +195,40 @@ export class GitHubClient {
 
       return {
         readme: readmeContent,
-        url: repoResponse.data.html_url
+        url: repoResponse.data.html_url,
+        defaultBranch: repoResponse.data.default_branch,
+        branches: totalBranches.map((b: any) => b.name)
       };
     } catch (error) {
       throw error;
+    }
+  }
+
+  /**
+   * Gets the README content for a specific branch of a repository.
+   *
+   * @param owner Repository owner username
+   * @param repo Repository name
+   * @param branch Branch name to fetch README from
+   * @returns Promise resolving to README content string or null if not found
+   */
+  async getReadmeForBranch(
+    owner: string,
+    repo: string,
+    branch: string
+  ): Promise<string | null> {
+    try {
+      const readmeResponse = await this.octokit.rest.repos.getReadme({
+        owner,
+        repo,
+        ref: branch,
+      });
+
+      return Buffer
+        .from(readmeResponse.data.content, 'base64')
+        .toString('utf-8');
+    } catch (error) {
+      return null;
     }
   }
 

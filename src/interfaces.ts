@@ -3,9 +3,12 @@ export interface RepositoryDetails {
   title: string;
   stack: string[];
   description: string;
+  show: boolean;
 }
 
 export interface RepositoryInfo {
   url: string;
   readme: string;
+  defaultBranch: string;
+  branches: string[];
 }
