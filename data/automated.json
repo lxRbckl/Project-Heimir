@@ -80,9 +80,9 @@
         "node-cron",
         "octokit"
       ],
-      "url": "https://github.com/lxrbckl-dev/Project-SelfStack/tree/claude/fix-readme-extraction-vNpyX",
+      "url": "https://github.com/lxrbckl-dev/Project-SelfStack",
       "description": "Scan repositories daily to extract and catalog technology stack information into a centralized data file. V3. Spring 2026.",
-      "show": false
+      "show": true
     },
     "Project SelfStack 1": {
       "title": "Project SelfStack 1",
