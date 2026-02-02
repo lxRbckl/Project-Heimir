@@ -1,6 +1,6 @@
 {
   "repositories": {
-    "Project-Maximus": {
+    "Project Maximus 2": {
       "title": "Project Maximus 2",
       "stack": [
         "Shell",
@@ -9,9 +9,25 @@
         "sys"
       ],
       "url": "https://github.com/lxrbckl-dev/Project-Maximus",
-      "description": "Use a Raspberry Pi to capture and record the stream of many USB camera(s) and interact with relay devices in a mobile environment. Fall 2024."
+      "description": "Use a Raspberry Pi to capture and record the stream of many USB camera(s) and interact with relay devices in a mobile environment. Fall 2024.",
+      "show": true
     },
-    "Project-Domum": {
+    "Project Maximus 1": {
+      "title": "Project Maximus 1",
+      "stack": [
+        "Python",
+        "Shell",
+        "dash",
+        "json",
+        "time",
+        "dash_daq",
+        "RPi.GPIO"
+      ],
+      "url": "https://github.com/lxrbckl-dev/Project-Maximus/tree/V1",
+      "description": "Use a Raspberry Pi to capture and record the stream of many USB camera(s) and interact with relay devices in a mobile environment. Spring 2021.",
+      "show": false
+    },
+    "Project Domum": {
       "title": "Project Domum",
       "stack": [
         "Python",
@@ -23,9 +39,10 @@
         "json"
       ],
       "url": "https://github.com/lxrbckl-dev/Project-Domum",
-      "description": "Manage power outlets by utilizing the GPIO pins of a Raspberry Pi. Spring 2021."
+      "description": "Manage power outlets by utilizing the GPIO pins of a Raspberry Pi. Spring 2021.",
+      "show": true
     },
-    "Project-WS3K": {
+    "Project WS3K": {
       "title": "Project WS3K",
       "stack": [
         "Python",
@@ -36,9 +53,10 @@
         "json"
       ],
       "url": "https://github.com/lxrbckl-dev/Project-WS3K",
-      "description": "Get alerted when a Discord user starts typing in a specific Discord channel. Spring 2021."
+      "description": "Get alerted when a Discord user starts typing in a specific Discord channel. Spring 2021.",
+      "show": true
     },
-    "Project-Comperio": {
+    "Project Comperio": {
       "title": "Project Comperio",
       "stack": [
         "Python",
@@ -51,9 +69,10 @@
         "xlutils"
       ],
       "url": "https://github.com/lxrbckl-dev/Project-Comperio",
-      "description": "Social network analysis tool for Instagram. Spring 2020. Discontinued."
+      "description": "Social network analysis tool for Instagram. Spring 2020. Discontinued.",
+      "show": true
     },
-    "Project-SelfStack": {
+    "Project SelfStack 3": {
       "title": "Project SelfStack 3",
       "stack": [
         "TypeScript",
@@ -61,10 +80,38 @@
         "node-cron",
         "octokit"
       ],
-      "url": "https://github.com/lxrbckl-dev/Project-SelfStack",
-      "description": "Scan repositories daily to extract and catalog technology stack information into a centralized data file. V3. Spring 2026."
+      "url": "https://github.com/lxrbckl-dev/Project-SelfStack/tree/claude/fix-readme-extraction-vNpyX",
+      "description": "Scan repositories daily to extract and catalog technology stack information into a centralized data file. V3. Spring 2026.",
+      "show": false
     },
-    "Project-Kinma": {
+    "Project SelfStack 1": {
+      "title": "Project SelfStack 1",
+      "stack": [
+        "Python",
+        "asyncio",
+        "github",
+        "discordpy",
+        "datetime"
+      ],
+      "url": "https://github.com/lxrbckl-dev/Project-SelfStack/tree/V1",
+      "description": "Maintain your portfolio project database with consistent updates. Fall 2022.",
+      "show": false
+    },
+    "Project SelfStack 2": {
+      "title": "Project SelfStack 2",
+      "stack": [
+        "TypeScript",
+        "Docker",
+        "octokit",
+        "node-cron",
+        "json",
+        "github-actions"
+      ],
+      "url": "https://github.com/lxrbckl-dev/Project-SelfStack/tree/V2",
+      "description": "Maintain your portfolio project database with consistent updates. Spring 2024.",
+      "show": false
+    },
+    "Project Kinma 2": {
       "title": "Project Kinma 2",
       "stack": [
         "JavaScript",
@@ -75,9 +122,24 @@
         "axios"
       ],
       "url": "https://github.com/lxrbckl-dev/Project-Kinma",
-      "description": "Create scheduled backups of all your GitHub repositories to a local directory. Fall 2023."
+      "description": "Create scheduled backups of all your GitHub repositories to a local directory. Fall 2023.",
+      "show": true
     },
-    "Project-RCoD": {
+    "Project Kinma 1": {
+      "title": "Project Kinma 1",
+      "stack": [
+        "Python",
+        "os",
+        "asyncio",
+        "pygithub",
+        "discordpy",
+        "wget"
+      ],
+      "url": "https://github.com/lxrbckl-dev/Project-Kinma/tree/V1",
+      "description": "Create daily backups of your GitHub projects to a local directory. Fall 2022.",
+      "show": false
+    },
+    "Project RCoD 3": {
       "title": "Project RCoD 3",
       "stack": [
         "Python",
@@ -90,9 +152,39 @@
         "opencv-python"
       ],
       "url": "https://github.com/lxrbckl-dev/Project-RCoD",
-      "description": "*Return Calls on Discord.* Reconnect to dropped Discord calls on Retina displays. Spring 2024."
+      "description": "*Return Calls on Discord.* Reconnect to dropped Discord calls on Retina displays. Spring 2024.",
+      "show": true
     },
-    "Project-ASBC": {
+    "Project RCoD 1": {
+      "title": "Project RCoD 1",
+      "stack": [
+        "Python",
+        "poetry",
+        "discordpy",
+        "requests",
+        "pyautogui",
+        "opencv-python",
+        "time"
+      ],
+      "url": "https://github.com/lxrbckl-dev/Project-RCoD/tree/V1",
+      "description": "*Return Calls on Discord.* Reconnect spontaneously disconnected Discord calls on Retina displays. Spring 2023.",
+      "show": false
+    },
+    "Project RCoD 2": {
+      "title": "Project RCoD 2",
+      "stack": [
+        "Python",
+        "poetry",
+        "discordpy",
+        "opencv-python",
+        "open-ai",
+        "time"
+      ],
+      "url": "https://github.com/lxrbckl-dev/Project-RCoD/tree/V2",
+      "description": "*Return Calls on Discord.* Reconnect to dropped Discord calls on Retina displays. Fall 2023.",
+      "show": false
+    },
+    "Project ASBC": {
       "title": "Project ASBC",
       "stack": [
         "Python",
@@ -110,9 +202,10 @@
         "pyautogui"
       ],
       "url": "https://github.com/lxrbckl-dev/Project-ASBC",
-      "description": "Automated surveillance for Blink Cameras. Leverage automation and artificial intelligence for monitoring and object detection of Blink camera footage. Summer 2023."
+      "description": "Automated surveillance for Blink Cameras. Leverage automation and artificial intelligence for monitoring and object detection of Blink camera footage. Summer 2023.",
+      "show": true
     },
-    "Project-PasCam": {
+    "Project PasCam 8": {
       "title": "Project PasCam 8",
       "stack": [
         "JavaScript",
@@ -123,9 +216,104 @@
         "github-actions"
       ],
       "url": "https://github.com/lxrbckl-dev/Project-PasCam",
-      "description": "Encrypt and share passwords using a Discord bot. Spring 2024."
+      "description": "Encrypt and share passwords using a Discord bot. Spring 2024.",
+      "show": true
     },
-    "Project-Fenaverat": {
+    "Project PasCam 1": {
+      "title": "Project PasCam 1",
+      "stack": [
+        "Python",
+        "string",
+        "random",
+        "datetime"
+      ],
+      "url": "https://github.com/lxrbckl-dev/Project-PasCam/tree/V1",
+      "description": "Camouflage your passwords. Spring 2019.",
+      "show": false
+    },
+    "Project PasCam 2": {
+      "title": "Project PasCam 2",
+      "stack": [
+        "Python",
+        "random",
+        "string",
+        "glob",
+        "datetime",
+        "time"
+      ],
+      "url": "https://github.com/lxrbckl-dev/Project-PasCam/tree/V2",
+      "description": "Camouflage your passwords. Fall 2019.",
+      "show": false
+    },
+    "Project PasCam 3": {
+      "title": "Project PasCam 3",
+      "stack": [
+        "Python",
+        "random",
+        "string",
+        "glob",
+        "datetime",
+        "time",
+        "pyperclip"
+      ],
+      "url": "https://github.com/lxrbckl-dev/Project-PasCam/tree/V3",
+      "description": "Camouflage your passwords. Spring 2020.",
+      "show": false
+    },
+    "Project PasCam 4": {
+      "title": "Project PasCam 4",
+      "stack": [
+        "Python",
+        "discordpy",
+        "random",
+        "string",
+        "os"
+      ],
+      "url": "https://github.com/lxrbckl-dev/Project-PasCam/tree/V4",
+      "description": "Camouflage your passwords with a Discord bot. Fall 2020.",
+      "show": false
+    },
+    "Project PasCam 5": {
+      "title": "Project PasCam 5",
+      "stack": [
+        "Python",
+        "random",
+        "string",
+        "discordpy",
+        "os"
+      ],
+      "url": "https://github.com/lxrbckl-dev/Project-PasCam/tree/V5",
+      "description": "Camouflage your passwords with a Discord bot. Spring 2021.",
+      "show": false
+    },
+    "Project PasCam 6": {
+      "title": "Project PasCam 6",
+      "stack": [
+        "Python",
+        "random",
+        "string",
+        "discordpy",
+        "os"
+      ],
+      "url": "https://github.com/lxrbckl-dev/Project-PasCam/tree/V6",
+      "description": "Camouflage your passwords with a Discord bot. Fall 2021.",
+      "show": false
+    },
+    "Project PasCam 7": {
+      "title": "Project PasCam 7",
+      "stack": [
+        "Python",
+        "random",
+        "os",
+        "discordpy",
+        "string",
+        "json"
+      ],
+      "url": "https://github.com/lxrbckl-dev/Project-PasCam/tree/V7",
+      "description": "Camouflage your passwords with a Discord bot. Spring 2022.",
+      "show": false
+    },
+    "Project Fenaverat 5": {
       "title": "Project Fenaverat 5",
       "stack": [
         "Python",
@@ -142,9 +330,79 @@
         "github-actions"
       ],
       "url": "https://github.com/lxrbckl-dev/Project-Fenaverat",
-      "description": "A website portfolio crafted to showcase details about yourself, your servers, and your projects. V5. Fall 2025."
+      "description": "A website portfolio crafted to showcase details about yourself, your servers, and your projects. V5. Fall 2025.",
+      "show": true
     },
-    "Project-Acta-Mea": {
+    "Project Fenaverat 1": {
+      "title": "Project Fenaverat 1",
+      "stack": [
+        "Python",
+        "dash",
+        "dash-bootstrap-components",
+        "flask",
+        "gunicorn",
+        "plotly",
+        "requests",
+        "selenium",
+        "json"
+      ],
+      "url": "https://github.com/lxrbckl-dev/Project-Fenaverat/tree/V1",
+      "description": "A website portfolio  designed to display information about you, your projects, and your servers. Spring 2022.",
+      "show": false
+    },
+    "Project Fenaverat 2": {
+      "title": "Project Fenaverat 2",
+      "stack": [
+        "Python",
+        "dash",
+        "dash-bootstrap-components",
+        "flask",
+        "gunicorn",
+        "plotly",
+        "requests",
+        "json"
+      ],
+      "url": "https://github.com/lxrbckl-dev/Project-Fenaverat/tree/V2",
+      "description": "A website portfolio crafted to showcase details about yourself, your projects, and your servers. Fall 2022.",
+      "show": false
+    },
+    "Project Fenaverat 3": {
+      "title": "Project Fenaverat 3",
+      "stack": [
+        "Python",
+        "Docker",
+        "poetry",
+        "dash",
+        "dash-bootstrap-components",
+        "flask",
+        "gunicorn",
+        "plotly",
+        "requests",
+        "json"
+      ],
+      "url": "https://github.com/lxrbckl-dev/Project-Fenaverat/tree/V3",
+      "description": "A website portfolio crafted to showcase details about yourself, your servers, and your projects. Spring 2024.",
+      "show": false
+    },
+    "Project Fenaverat 4": {
+      "title": "Project Fenaverat 4",
+      "stack": [
+        "Python",
+        "Docker",
+        "dash",
+        "dash-bootstrap-components",
+        "dash-player",
+        "flask",
+        "gunicorn",
+        "plotly",
+        "requests",
+        "json"
+      ],
+      "url": "https://github.com/lxrbckl-dev/Project-Fenaverat/tree/V4",
+      "description": "A website portfolio crafted to showcase details about yourself, your servers, and your projects. Spring 2024.",
+      "show": false
+    },
+    "Project Acta Mea 6": {
       "title": "Project Acta Mea 6",
       "stack": [
         "TypeScript",
@@ -157,9 +415,80 @@
         "github-actions"
       ],
       "url": "https://github.com/lxrbckl-dev/Project-Acta-Mea",
-      "description": "CRUD management for servers and services featuring dockerode integration. Spring 2024. Discontinued."
+      "description": "CRUD management for servers and services featuring dockerode integration. Spring 2024. Discontinued.",
+      "show": true
     },
-    "Project-JA": {
+    "Project Acta Mea 1": {
+      "title": "Project Acta Mea 1",
+      "stack": [
+        "Python",
+        "os",
+        "discordpy",
+        "json"
+      ],
+      "url": "https://github.com/lxrbckl-dev/Project-Acta-Mea/tree/V1",
+      "description": "Access Discord servers with a Discord bot. Spring 2021. Discontinued.",
+      "show": false
+    },
+    "Project Acta Mea 2": {
+      "title": "Project Acta Mea 2",
+      "stack": [
+        "Python",
+        "json",
+        "os",
+        "discordpy"
+      ],
+      "url": "https://github.com/lxrbckl-dev/Project-Acta-Mea/tree/V2",
+      "description": "Access Discord servers and nodes you want to SSH into with a Discord bot. Spring 2022. Discontinued.",
+      "show": false
+    },
+    "Project Acta Mea 3": {
+      "title": "Project Acta Mea 3",
+      "stack": [
+        "Python",
+        "os",
+        "pygithub",
+        "discordpy",
+        "json",
+        "requests",
+        "asyncio"
+      ],
+      "url": "https://github.com/lxrbckl-dev/Project-Acta-Mea/tree/V3",
+      "description": "Manage servers and services using a Discord bot with a GitHub repository data file. Spring 2022. Discontinued.",
+      "show": false
+    },
+    "Project Acta Mea 4": {
+      "title": "Project Acta Mea 4",
+      "stack": [
+        "Python",
+        "requests",
+        "discordpy",
+        "pygithub",
+        "asyncio",
+        "json"
+      ],
+      "url": "https://github.com/lxrbckl-dev/Project-Acta-Mea/tree/V4",
+      "description": "Administer servers and services via a Discord bot utilizing a remote data file. Spring 2022. Discontinued.",
+      "show": false
+    },
+    "Project Acta Mea 5": {
+      "title": "Project Acta Mea 5",
+      "stack": [
+        "JavaScript",
+        "Docker",
+        "octokit",
+        "discordjs",
+        "dockerode",
+        "node-cron",
+        "axios",
+        "github-actions",
+        "git-hooks"
+      ],
+      "url": "https://github.com/lxrbckl-dev/Project-Acta-Mea/tree/V5",
+      "description": "Administer servers and services via a Discord bot utilizing a remote data file. Spring 2024. Discontinued.",
+      "show": false
+    },
+    "Project JA 4": {
       "title": "Project JA 4",
       "stack": [
         "TypeScript",
@@ -171,9 +500,53 @@
         "github-actions"
       ],
       "url": "https://github.com/lxrbckl-dev/Project-JA",
-      "description": "Interact with the mystical conch shell, engage in weekly conversation prompts, and delegate decision-making. Fall 2024."
+      "description": "Interact with the mystical conch shell, engage in weekly conversation prompts, and delegate decision-making. Fall 2024.",
+      "show": true
     },
-    "Project-UMKC": {
+    "Project JA 1": {
+      "title": "Project JA 1",
+      "stack": [
+        "Python",
+        "os",
+        "random",
+        "json",
+        "discordpy"
+      ],
+      "url": "https://github.com/lxrbckl-dev/Project-JA/tree/V1",
+      "description": "Send and receive messages through an inbox, play with the magic conch shell, and get decisions made for you with a Discord bot. Spring 2022.",
+      "show": false
+    },
+    "Project JA 2": {
+      "title": "Project JA 2",
+      "stack": [
+        "Python",
+        "os",
+        "random",
+        "json",
+        "discordpy",
+        "datetime"
+      ],
+      "url": "https://github.com/lxrbckl-dev/Project-JA/tree/V2",
+      "description": "Interact with the mystical conch shell, engage in weekly conversation prompts, and delegate decision-making. Spring 2023.",
+      "show": false
+    },
+    "Project JA 3": {
+      "title": "Project JA 3",
+      "stack": [
+        "JavaScript",
+        "Docker",
+        "discordjs",
+        "axios",
+        "node-cron",
+        "open-ai",
+        "github-actions",
+        "git-hooks"
+      ],
+      "url": "https://github.com/lxrbckl-dev/Project-JA/tree/V3",
+      "description": "Interact with the mystical conch shell, engage in weekly conversation prompts, and delegate decision-making. Fall 2023.",
+      "show": false
+    },
+    "Project UMKC 2": {
       "title": "Project UMKC 2",
       "stack": [
         "Python",
@@ -184,9 +557,23 @@
         "discordpy"
       ],
       "url": "https://github.com/lxrbckl-dev/Project-UMKC",
-      "description": "Receive notifcations when classes are about to start. V2. Fall 2021."
+      "description": "Receive notifcations when classes are about to start. V2. Fall 2021.",
+      "show": true
     },
-    "Project-ACLG": {
+    "Project UMKC 1": {
+      "title": "Project UMKC 1",
+      "stack": [
+        "Python",
+        "asyncio",
+        "json",
+        "datetime",
+        "discordpy"
+      ],
+      "url": "https://github.com/lxrbckl-dev/Project-UMKC/tree/V1",
+      "description": "Receive notifcations when classes are about to start. V1. Fall 2020.",
+      "show": false
+    },
+    "Project ACLG": {
       "title": "Project ACLG",
       "stack": [
         "Python",
@@ -202,9 +589,10 @@
         "github-actions"
       ],
       "url": "https://github.com/lxrbckl-dev/Project-ACLG",
-      "description": "*Automated Cover Letter/Resume Generator.* Spring 2024. Discontinued."
+      "description": "*Automated Cover Letter/Resume Generator.* Spring 2024. Discontinued.",
+      "show": true
     },
-    "Project-MadGarden": {
+    "Project MadGarden 2": {
       "title": "Project MadGarden 2",
       "stack": [
         "TypeScript",
@@ -216,9 +604,25 @@
         "json"
       ],
       "url": "https://github.com/lxrbckl-dev/Project-MadGarden",
-      "description": "Autonomously develop and display your tech stack network from the tools used in your repositories. Summer 2024."
+      "description": "Autonomously develop and display your tech stack network from the tools used in your repositories. Summer 2024.",
+      "show": true
     },
-    "Project-FlyingGitman": {
+    "Project MadGarden 1": {
+      "title": "Project MadGarden 1",
+      "stack": [
+        "TypeScript",
+        "Docker",
+        "octokit",
+        "node-cron",
+        "axios",
+        "github-actions",
+        "json"
+      ],
+      "url": "https://github.com/lxrbckl-dev/Project-MadGarden/tree/V1",
+      "description": "Autonomously develop and display your tech stack network from the tools used in your repositories. Summer 2024.",
+      "show": false
+    },
+    "Project FlyingGitman": {
       "title": "Project FlyingGitman",
       "stack": [
         "TypeScript",
@@ -227,9 +631,10 @@
         "octokit"
       ],
       "url": "https://github.com/lxrbckl-dev/Project-FlyingGitman",
-      "description": "Automatically follow and unfollow GitHub users to build your network. Spring 2026."
+      "description": "Automatically follow and unfollow GitHub users to build your network. Spring 2026.",
+      "show": true
     },
-    "Project-AuTester": {
+    "Project AuTester": {
       "title": "Project AuTester",
       "stack": [
         "Python",
@@ -250,7 +655,15 @@
         "functools"
       ],
       "url": "https://github.com/lxrbckl-dev/Project-AuTester",
-      "description": "Create scripts to emulate digital human interactivity. Spring 2025. Proof of concept."
+      "description": "Create scripts to emulate digital human interactivity. Spring 2025. Proof of concept.",
+      "show": true
+    },
+    "Installation": {
+      "title": "Installation",
+      "stack": [],
+      "url": "https://github.com/lxrbckl-dev/Project-AuTester/tree/backup",
+      "description": "```",
+      "show": false
     },
     "portfolio": {
       "title": "portfolio",
@@ -263,14 +676,16 @@
         "radix-ui",
         "github-actions"
       ],
-      "url": "https://github.com/lxrbckl-dev/portfolio",
-      "description": "A forked portfolio website, containerized to work on a local server with pipelines. Fall 2025."
+      "url": "https://github.com/lxrbckl-dev/portfolio/tree/sawyer-showalter-business",
+      "description": "A forked portfolio website, containerized to work on a local server with pipelines.",
+      "show": false
     },
-    ".github": {
+    "`.github/workflows/dockerhub-build-push.yml`": {
       "title": "`.github/workflows/dockerhub-build-push.yml`",
       "stack": [],
-      "url": "https://github.com/lxrbckl-dev/.github",
-      "description": "```yml"
+      "url": "https://github.com/lxrbckl-dev/.github/tree/claude/review-github-action-jPFqa",
+      "description": "```yml",
+      "show": false
     },
     "reactive-resume": {
       "title": "reactive-resume",
@@ -286,127 +701,150 @@
         "oRPC"
       ],
       "url": "https://github.com/lxrbckl-dev/reactive-resume",
-      "description": "A forked, stable release of reactive-resume, for the sake of consistency. Spring 2026."
+      "description": "A forked, stable release of reactive-resume, for the sake of consistency. Spring 2026.",
+      "show": true
     },
-    "CS449-P": {
+    "CS449 P": {
       "title": "CS449 P",
       "stack": [
         "C#"
       ],
       "url": "https://github.com/ala2q6/CS449-P",
-      "description": "University of Missouri - Kansas City: CS449: Project"
+      "description": "University of Missouri - Kansas City: CS449: Project",
+      "show": true
     },
-    "CS461-P3": {
+    "CS461 P3": {
       "title": "CS461 P3",
       "stack": [
         "Python"
       ],
       "url": "https://github.com/ala2q6/CS461-P3",
-      "description": "University of Missouri - Kansas City: CS461: Project 3"
+      "description": "University of Missouri - Kansas City: CS461: Project 3",
+      "show": true
     },
-    "CS461-P2": {
+    "CS461 P2": {
       "title": "CS461 P2",
       "stack": [
         "Python"
       ],
       "url": "https://github.com/ala2q6/CS461-P2",
-      "description": "University of Missouri - Kansas City: CS461: Project 2"
+      "description": "University of Missouri - Kansas City: CS461: Project 2",
+      "show": true
     },
-    "HAR-S22": {
+    "HAR S22": {
       "title": "HAR S22",
       "stack": [
         "Python"
       ],
       "url": "https://github.com/ala2q6/HAR-S22",
-      "description": "University of Missouri - Kansas City: Hack-A-Roo: Spring 2022"
+      "description": "University of Missouri - Kansas City: Hack-A-Roo: Spring 2022",
+      "show": true
     },
-    "CS456-P": {
+    "`HAR-S22`": {
+      "title": "`HAR-S22`",
+      "stack": [],
+      "url": "https://github.com/ala2q6/HAR-S22/tree/backend",
+      "description": "[University of Missouri - Kansas City](https://www.umkc.edu/): [Hack-A-Roo Spring 2022](https://info.umkc.edu/hack-a-roo/)",
+      "show": false
+    },
+    "CS456 P": {
       "title": "CS456 P",
       "stack": [
         "Python"
       ],
       "url": "https://github.com/ala2q6/CS456-P",
-      "description": "University of Missouri - Kansas City: CS456: Project"
+      "description": "University of Missouri - Kansas City: CS456: Project",
+      "show": true
     },
-    "CS490DL-P": {
+    "CS490DL P": {
       "title": "CS490DL P",
       "stack": [
         "Python"
       ],
       "url": "https://github.com/ala2q6/CS490DL-P",
-      "description": "University of Missouri - Kansas City: CS490 Deep Learning: Project"
+      "description": "University of Missouri - Kansas City: CS490 Deep Learning: Project",
+      "show": true
     },
-    "CS201R-P1": {
+    "CS201R P1": {
       "title": "CS201R P1",
       "stack": [
         "C++"
       ],
       "url": "https://github.com/ala2q6/CS201R-P1",
-      "description": "University of Missouri - Kansas City: CS201R: Project 1"
+      "description": "University of Missouri - Kansas City: CS201R: Project 1",
+      "show": true
     },
-    "CS201R-P2": {
+    "CS201R P2": {
       "title": "CS201R P2",
       "stack": [
         "C++"
       ],
       "url": "https://github.com/ala2q6/CS201R-P2",
-      "description": "University of Missouri - Kansas City: CS201R: Project 2"
+      "description": "University of Missouri - Kansas City: CS201R: Project 2",
+      "show": true
     },
-    "CS201R-P5": {
+    "CS201R P5": {
       "title": "CS201R P5",
       "stack": [
         "C++"
       ],
       "url": "https://github.com/ala2q6/CS201R-P5",
-      "description": "University of Missouri - Kansas City: CS201R: Project 5"
+      "description": "University of Missouri - Kansas City: CS201R: Project 5",
+      "show": true
     },
-    "CS201R-P3": {
+    "CS201R P3": {
       "title": "CS201R P3",
       "stack": [
         "C++"
       ],
       "url": "https://github.com/ala2q6/CS201R-P3",
-      "description": "University of Missouri - Kansas City: CS201R: Project 3"
+      "description": "University of Missouri - Kansas City: CS201R: Project 3",
+      "show": true
     },
-    "CS461-P1": {
+    "CS461 P1": {
       "title": "CS461 P1",
       "stack": [
         "Python"
       ],
       "url": "https://github.com/ala2q6/CS461-P1",
-      "description": "University of Missouri - Kansas City: CS461: Project 1"
+      "description": "University of Missouri - Kansas City: CS461: Project 1",
+      "show": true
     },
-    "CS303-P1": {
+    "CS303 P1": {
       "title": "CS303 P1",
       "stack": [
         "C++"
       ],
       "url": "https://github.com/ala2q6/CS303-P1",
-      "description": "University of Missouri - Kansas City: CS303: Project 1"
+      "description": "University of Missouri - Kansas City: CS303: Project 1",
+      "show": true
     },
-    "CS303-P2": {
+    "CS303 P2": {
       "title": "CS303 P2",
       "stack": [
         "C++"
       ],
       "url": "https://github.com/ala2q6/CS303-P2",
-      "description": "University of Missouri - Kansas City: CS303: Project 2"
+      "description": "University of Missouri - Kansas City: CS303: Project 2",
+      "show": true
     },
-    "CS201R-P4": {
+    "CS201R P4": {
       "title": "CS201R P4",
       "stack": [
         "C++"
       ],
       "url": "https://github.com/ala2q6/CS201R-P4",
-      "description": "University of Missouri - Kansas City: CS201R: Project 4"
+      "description": "University of Missouri - Kansas City: CS201R: Project 4",
+      "show": true
     },
-    "CS441-P2": {
+    "CS441 P2": {
       "title": "CS441 P2",
       "stack": [
         "Clojure"
       ],
       "url": "https://github.com/ala2q6/CS441-P2",
-      "description": "University of Missouri - Kansas City: CS441: Project 2"
+      "description": "University of Missouri - Kansas City: CS441: Project 2",
+      "show": true
     }
   },
   "languages": [
@@ -423,38 +861,46 @@
   "packages": [
     "RPi.GPIO",
     "sys",
+    "dash",
+    "json",
+    "time",
+    "dash_daq",
     "suntime",
     "asyncio",
     "discordpy",
     "datetime",
-    "json",
     "selenium",
-    "time",
     "os",
     "xlwt",
     "xlrd",
     "xlutils",
     "node-cron",
     "octokit",
+    "github",
+    "github-actions",
     "discordjs",
     "axios",
+    "pygithub",
+    "wget",
     "poetry",
     "open-ai",
     "opencv-python",
-    "dash",
+    "requests",
+    "pyautogui",
     "dash-bootstrap-components",
     "random",
     "pytorch",
     "PIL",
-    "pyautogui",
     "crypto",
     "git-hooks",
-    "github-actions",
+    "string",
+    "glob",
+    "pyperclip",
     "dash-mantine-components",
     "flask",
     "gunicorn",
     "plotly",
-    "requests",
+    "dash-player",
     "dockerode",
     "reportlab",
     "re",
