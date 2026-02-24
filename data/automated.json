@@ -603,9 +603,9 @@
         "github-actions",
         "json"
       ],
-      "url": "https://github.com/lxrbckl-dev/Project-MadGarden",
+      "url": "https://github.com/lxrbckl-dev/Project-MadGarden/tree/claude/fix-axios-vulnerability-onJqf",
       "description": "Autonomously develop and display your tech stack network from the tools used in your repositories. Summer 2024.",
-      "show": true
+      "show": false
     },
     "Project MadGarden 1": {
       "title": "Project MadGarden 1",
