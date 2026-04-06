@@ -215,9 +215,9 @@
         "git-hooks",
         "github-actions"
       ],
-      "url": "https://github.com/lxrbckl-dev/Project-PasCam",
+      "url": "https://github.com/lxrbckl-dev/Project-PasCam/tree/dependabot/npm_and_yarn/picomatch-2.3.2",
       "description": "Encrypt and share passwords using a Discord bot. Spring 2024.",
-      "show": true
+      "show": false
     },
     "Project PasCam 1": {
       "title": "Project PasCam 1",
@@ -329,9 +329,9 @@
         "requests",
         "github-actions"
       ],
-      "url": "https://github.com/lxrbckl-dev/Project-Fenaverat",
+      "url": "https://github.com/lxrbckl-dev/Project-Fenaverat/tree/fix/swe-3/dependabot-vulnerabilities",
       "description": "A website portfolio crafted to showcase details about yourself, your servers, and your projects. V5. Fall 2025.",
-      "show": true
+      "show": false
     },
     "Project Fenaverat 1": {
       "title": "Project Fenaverat 1",
@@ -414,9 +414,9 @@
         "octokit",
         "github-actions"
       ],
-      "url": "https://github.com/lxrbckl-dev/Project-Acta-Mea",
+      "url": "https://github.com/lxrbckl-dev/Project-Acta-Mea/tree/dependabot/npm_and_yarn/multi-ae3643c14f",
       "description": "CRUD management for servers and services featuring dockerode integration. Spring 2024. Discontinued.",
-      "show": true
+      "show": false
     },
     "Project Acta Mea 1": {
       "title": "Project Acta Mea 1",
@@ -499,9 +499,9 @@
         "open-ai",
         "github-actions"
       ],
-      "url": "https://github.com/lxrbckl-dev/Project-JA",
+      "url": "https://github.com/lxrbckl-dev/Project-JA/tree/dependabot/npm_and_yarn/multi-ae3643c14f",
       "description": "Interact with the mystical conch shell, engage in weekly conversation prompts, and delegate decision-making. Fall 2024.",
-      "show": true
+      "show": false
     },
     "Project JA 1": {
       "title": "Project JA 1",
@@ -654,9 +654,9 @@
         "pyautogui",
         "functools"
       ],
-      "url": "https://github.com/lxrbckl-dev/Project-AuTester",
+      "url": "https://github.com/lxrbckl-dev/Project-AuTester/tree/fix/swe-1/dependabot-vuln-fixes",
       "description": "Create scripts to emulate digital human interactivity. Spring 2025. Proof of concept.",
-      "show": true
+      "show": false
     },
     "Installation": {
       "title": "Installation",
@@ -700,16 +700,16 @@
         "Better Auth",
         "oRPC"
       ],
-      "url": "https://github.com/lxrbckl-dev/reactive-resume",
+      "url": "https://github.com/lxrbckl-dev/reactive-resume/tree/dependabot/npm_and_yarn/nodemailer-8.0.4",
       "description": "A forked, stable release of reactive-resume, for the sake of consistency. Spring 2026.",
-      "show": true
+      "show": false
     },
     "<h1<img src=\"https://github.com/lxRbckl/highlander/blob/main/flutter/assets/icon.png?raw=true\" height=\"40\" valign=\"middle\" /&nbsp; SafeTrack</h1": {
       "title": "<h1<img src=\"https://github.com/lxRbckl/highlander/blob/main/flutter/assets/icon.png?raw=true\" height=\"40\" valign=\"middle\" /&nbsp; SafeTrack</h1",
       "stack": [],
-      "url": "https://github.com/lxrbckl-dev/Project-SafeTrack",
+      "url": "https://github.com/lxrbckl-dev/Project-SafeTrack/tree/fix/swe-2/x-crypto-0.45.0",
       "description": "Incident Investigation & Corrective Action System (SRD-10). Cross-platform Flutter app with Go backend, built using a multi-agent Claude Code team.",
-      "show": true
+      "show": false
     },
     "SafeTrack": {
       "title": "SafeTrack",
