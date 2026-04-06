@@ -1,19 +1,5 @@
 {
   "repositories": {
-    "<h1<img src=\"https://github.com/lxRbckl/highlander/blob/main/flutter/assets/icon.png?raw=true\" height=\"40\" valign=\"middle\" /&nbsp; SafeTrack</h1": {
-      "title": "<h1<img src=\"https://github.com/lxRbckl/highlander/blob/main/flutter/assets/icon.png?raw=true\" height=\"40\" valign=\"middle\" /&nbsp; SafeTrack</h1",
-      "stack": [],
-      "url": "https://github.com/lxRbckl/highlander",
-      "description": "Incident Investigation & Corrective Action System (SRD-10). Cross-platform Flutter app with Go backend, built using a multi-agent Claude Code team.",
-      "show": true
-    },
-    "SafeTrack": {
-      "title": "SafeTrack",
-      "stack": [],
-      "url": "https://github.com/lxRbckl/highlander/tree/swe2/resilience-fixes",
-      "description": "Incident Investigation & Corrective Action System (SRD-10). Cross-platform Flutter app with Go backend, built using a multi-agent Claude Code team.",
-      "show": false
-    },
     "Project Maximus 2": {
       "title": "Project Maximus 2",
       "stack": [
@@ -717,6 +703,20 @@
       "url": "https://github.com/lxrbckl-dev/reactive-resume",
       "description": "A forked, stable release of reactive-resume, for the sake of consistency. Spring 2026.",
       "show": true
+    },
+    "<h1<img src=\"https://github.com/lxRbckl/highlander/blob/main/flutter/assets/icon.png?raw=true\" height=\"40\" valign=\"middle\" /&nbsp; SafeTrack</h1": {
+      "title": "<h1<img src=\"https://github.com/lxRbckl/highlander/blob/main/flutter/assets/icon.png?raw=true\" height=\"40\" valign=\"middle\" /&nbsp; SafeTrack</h1",
+      "stack": [],
+      "url": "https://github.com/lxrbckl-dev/Project-SafeTrack",
+      "description": "Incident Investigation & Corrective Action System (SRD-10). Cross-platform Flutter app with Go backend, built using a multi-agent Claude Code team.",
+      "show": true
+    },
+    "SafeTrack": {
+      "title": "SafeTrack",
+      "stack": [],
+      "url": "https://github.com/lxrbckl-dev/Project-SafeTrack/tree/swe2/resilience-fixes",
+      "description": "Incident Investigation & Corrective Action System (SRD-10). Cross-platform Flutter app with Go backend, built using a multi-agent Claude Code team.",
+      "show": false
     },
     "CS449 P": {
       "title": "CS449 P",
