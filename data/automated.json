@@ -121,9 +121,9 @@
         "node-cron",
         "axios"
       ],
-      "url": "https://github.com/lxrbckl-dev/Project-Kinma",
+      "url": "https://github.com/lxrbckl-dev/Project-Kinma/tree/fix/swe-3/dependabot-vulnerabilities",
       "description": "Create scheduled backups of all your GitHub repositories to a local directory. Fall 2023.",
-      "show": true
+      "show": false
     },
     "Project Kinma 1": {
       "title": "Project Kinma 1",
@@ -151,9 +151,9 @@
         "os",
         "opencv-python"
       ],
-      "url": "https://github.com/lxrbckl-dev/Project-RCoD",
+      "url": "https://github.com/lxrbckl-dev/Project-RCoD/tree/fix/swe-1/dependabot-vulnerability-fixes",
       "description": "*Return Calls on Discord.* Reconnect to dropped Discord calls on Retina displays. Spring 2024.",
-      "show": true
+      "show": false
     },
     "Project RCoD 1": {
       "title": "Project RCoD 1",
@@ -201,9 +201,9 @@
         "PIL",
         "pyautogui"
       ],
-      "url": "https://github.com/lxrbckl-dev/Project-ASBC",
+      "url": "https://github.com/lxrbckl-dev/Project-ASBC/tree/fix/swe-1/dependabot-vuln-remediation",
       "description": "Automated surveillance for Blink Cameras. Leverage automation and artificial intelligence for monitoring and object detection of Blink camera footage. Summer 2023.",
-      "show": true
+      "show": false
     },
     "Project PasCam 8": {
       "title": "Project PasCam 8",
@@ -215,7 +215,7 @@
         "git-hooks",
         "github-actions"
       ],
-      "url": "https://github.com/lxrbckl-dev/Project-PasCam/tree/dependabot/npm_and_yarn/picomatch-2.3.2",
+      "url": "https://github.com/lxrbckl-dev/Project-PasCam/tree/fix/swe-2/dependabot-vuln-remediation",
       "description": "Encrypt and share passwords using a Discord bot. Spring 2024.",
       "show": false
     },
@@ -414,7 +414,7 @@
         "octokit",
         "github-actions"
       ],
-      "url": "https://github.com/lxrbckl-dev/Project-Acta-Mea/tree/dependabot/npm_and_yarn/multi-ae3643c14f",
+      "url": "https://github.com/lxrbckl-dev/Project-Acta-Mea/tree/fix/swe-3/dependabot-vuln-remediation",
       "description": "CRUD management for servers and services featuring dockerode integration. Spring 2024. Discontinued.",
       "show": false
     },
@@ -499,7 +499,7 @@
         "open-ai",
         "github-actions"
       ],
-      "url": "https://github.com/lxrbckl-dev/Project-JA/tree/dependabot/npm_and_yarn/multi-ae3643c14f",
+      "url": "https://github.com/lxrbckl-dev/Project-JA/tree/fix/swe-2/dependabot-vuln-remediation",
       "description": "Interact with the mystical conch shell, engage in weekly conversation prompts, and delegate decision-making. Fall 2024.",
       "show": false
     },
@@ -588,9 +588,9 @@
         "dash-bootstrap-components",
         "github-actions"
       ],
-      "url": "https://github.com/lxrbckl-dev/Project-ACLG",
+      "url": "https://github.com/lxrbckl-dev/Project-ACLG/tree/fix/swe-2/dependabot-vuln-updates",
       "description": "*Automated Cover Letter/Resume Generator.* Spring 2024. Discontinued.",
-      "show": true
+      "show": false
     },
     "Project MadGarden 2": {
       "title": "Project MadGarden 2",
@@ -683,7 +683,7 @@
     "`.github/workflows/dockerhub-build-push.yml`": {
       "title": "`.github/workflows/dockerhub-build-push.yml`",
       "stack": [],
-      "url": "https://github.com/lxrbckl-dev/.github/tree/claude/review-github-action-jPFqa",
+      "url": "https://github.com/lxrbckl-dev/.github/tree/feat/swe-2/org-profile-redesign",
       "description": "```yml",
       "show": false
     },
@@ -700,7 +700,7 @@
         "Better Auth",
         "oRPC"
       ],
-      "url": "https://github.com/lxrbckl-dev/reactive-resume/tree/dependabot/npm_and_yarn/nodemailer-8.0.4",
+      "url": "https://github.com/lxrbckl-dev/reactive-resume/tree/fix/swe-3/dependabot-vuln-remediation",
       "description": "A forked, stable release of reactive-resume, for the sake of consistency. Spring 2026.",
       "show": false
     },
