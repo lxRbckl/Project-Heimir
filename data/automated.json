@@ -725,6 +725,19 @@
       "description": "An always-on, self-hosted AI agent platform that acts as a fully autonomous DevOps team for managing multiple GitHub organizations. Handles issue triage, PR management, vulnerability remediation, and kanban board tracking through a team of specialized Claude Code agents.",
       "show": true
     },
+    "TorchPass": {
+      "title": "TorchPass",
+      "stack": [],
+      "url": "https://github.com/herzog-org/Project-TorchPass/tree/fix/swe-3/revert-subcard-tints",
+      "description": "Internal web application for managing on-call support handoff checklists.",
+      "show": false
+    },
+    "Project-TorchPass": {
+      "title": "Project-TorchPass",
+      "stack": [],
+      "url": "https://github.com/herzog-org/Project-TorchPass/tree/feat/swe-2/phase-4-handoff-form",
+      "show": false
+    },
     "CS449 P": {
       "title": "CS449 P",
       "stack": [
