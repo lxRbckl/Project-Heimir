@@ -728,14 +728,14 @@
     "TorchPass": {
       "title": "TorchPass",
       "stack": [],
-      "url": "https://github.com/herzog-org/Project-TorchPass/tree/fix/swe-3/revert-subcard-tints",
+      "url": "https://github.com/T5-labs/Project-TorchPass/tree/fix/swe-3/revert-subcard-tints",
       "description": "Internal web application for managing on-call support handoff checklists.",
       "show": false
     },
     "Project-TorchPass": {
       "title": "Project-TorchPass",
       "stack": [],
-      "url": "https://github.com/herzog-org/Project-TorchPass/tree/feat/swe-2/phase-4-handoff-form",
+      "url": "https://github.com/T5-labs/Project-TorchPass/tree/feat/swe-2/phase-4-handoff-form",
       "show": false
     },
     "CS449 P": {
