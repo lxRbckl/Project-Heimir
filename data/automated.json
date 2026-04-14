@@ -603,7 +603,7 @@
         "github-actions",
         "json"
       ],
-      "url": "https://github.com/lxrbckl-dev/Project-MadGarden/tree/dependabot/npm_and_yarn/axios-1.15.0",
+      "url": "https://github.com/lxrbckl-dev/Project-MadGarden/tree/claude/fix-axios-vulnerability-onJqf",
       "description": "Autonomously develop and display your tech stack network from the tools used in your repositories. Summer 2024.",
       "show": false
     },
@@ -633,37 +633,6 @@
       "url": "https://github.com/lxrbckl-dev/Project-FlyingGitman",
       "description": "Automatically follow and unfollow GitHub users to build your network. Spring 2026.",
       "show": true
-    },
-    "Project AuTester": {
-      "title": "Project AuTester",
-      "stack": [
-        "Python",
-        "CSS",
-        "dash",
-        "time",
-        "dash-bootstrap-components",
-        "re",
-        "clipboard",
-        "json",
-        "os",
-        "dash-mantine-components",
-        "dash-iconify",
-        "logger",
-        "pytesseract",
-        "pygetwindow",
-        "pyautogui",
-        "functools"
-      ],
-      "url": "https://github.com/lxrbckl-dev/Project-AuTester/tree/fix/swe-1/dependabot-vuln-fixes",
-      "description": "Create scripts to emulate digital human interactivity. Spring 2025. Proof of concept.",
-      "show": false
-    },
-    "Installation": {
-      "title": "Installation",
-      "stack": [],
-      "url": "https://github.com/lxrbckl-dev/Project-AuTester/tree/backup",
-      "description": "```",
-      "show": false
     },
     "portfolio": {
       "title": "portfolio",
@@ -930,13 +899,6 @@
     "dash-player",
     "dockerode",
     "reportlab",
-    "re",
-    "clipboard",
-    "dash-iconify",
-    "logger",
-    "pytesseract",
-    "pygetwindow",
-    "functools",
     "next-js",
     "tailwind",
     "radix-ui",
