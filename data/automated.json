@@ -603,7 +603,7 @@
         "github-actions",
         "json"
       ],
-      "url": "https://github.com/lxrbckl-dev/Project-MadGarden/tree/claude/fix-axios-vulnerability-onJqf",
+      "url": "https://github.com/lxrbckl-dev/Project-MadGarden/tree/dependabot/npm_and_yarn/follow-redirects-1.16.0",
       "description": "Autonomously develop and display your tech stack network from the tools used in your repositories. Summer 2024.",
       "show": false
     },
