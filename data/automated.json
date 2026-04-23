@@ -645,7 +645,7 @@
         "radix-ui",
         "github-actions"
       ],
-      "url": "https://github.com/lxrbckl-dev/portfolio/tree/sawyer-showalter-business",
+      "url": "https://github.com/lxrbckl-dev/Project-Jordyn/tree/fix/swe-1/dependency-vulnerability-fixes",
       "description": "A forked portfolio website, containerized to work on a local server with pipelines.",
       "show": false
     },
@@ -685,6 +685,29 @@
       "stack": [],
       "url": "https://github.com/lxrbckl-dev/Project-SafeTrack/tree/swe2/resilience-fixes",
       "description": "Incident Investigation & Corrective Action System (SRD-10). Cross-platform Flutter app with Go backend, built using a multi-agent Claude Code team.",
+      "show": false
+    },
+    "Showalter Services": {
+      "title": "Showalter Services",
+      "stack": [],
+      "url": "https://github.com/lxrbckl-dev/Project-Showalter/tree/feat/swe-1/public-design-refresh",
+      "description": "**A self-hosted lawn-care business website — public booking flow + admin CMS + review pipeline, deployed via Docker**",
+      "show": false
+    },
+    "Project Showalter": {
+      "title": "Project Showalter",
+      "stack": [
+        "showalter.business"
+      ],
+      "url": "https://github.com/lxrbckl-dev/Project-Showalter/tree/test/swe-2/fix-e2e-flakiness",
+      "description": "Booking + CMS site for Showalter Services — Sawyer Showalter's lawn care /",
+      "show": false
+    },
+    "Project-Showalter": {
+      "title": "Project-Showalter",
+      "stack": [],
+      "url": "https://github.com/lxrbckl-dev/Project-Showalter/tree/feat/swe-1/docs-resolve-provisionals",
+      "description": "Website build for Showalter Services — Sawyer Showalter's lawn care / yard work business. Replaces a dead Linktree trial QR on `showalter.business`.",
       "show": false
     },
     "TorchPass": {
@@ -916,6 +939,7 @@
     "PostgreSQL",
     "Drizzle",
     "Better Auth",
-    "oRPC"
+    "oRPC",
+    "showalter.business"
   ]
 }
