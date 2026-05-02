@@ -737,6 +737,13 @@
       "description": "A multi-agent development team you deploy from any repo to collaboratively work on Jira tickets. Spring 2026.",
       "show": true
     },
+    "EnhanceJira": {
+      "title": "EnhanceJira",
+      "stack": [],
+      "url": "https://github.com/T5-labs/EnhanceJira",
+      "description": "A Chrome extension that enhances Atlassian Jira boards with full Bitbucket PR approval data — so you can tell at a glance which \"Review\" tickets are actually ready to merge, without clicking into each one.",
+      "show": true
+    },
     "CS449 P": {
       "title": "CS449 P",
       "stack": [
