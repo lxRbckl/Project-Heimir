@@ -733,9 +733,9 @@
     "Project SWT": {
       "title": "Project SWT",
       "stack": [],
-      "url": "https://github.com/T5-labs/Project-SWT",
+      "url": "https://github.com/T5-labs/Project-SWT/tree/claude/devcontainer-ci-automation-ySal6",
       "description": "A multi-agent development team you deploy from any repo to collaboratively work on Jira tickets. Spring 2026.",
-      "show": true
+      "show": false
     },
     "EnhanceJira": {
       "title": "EnhanceJira",
