@@ -737,6 +737,13 @@
       "description": "A Chrome extension that enhances Atlassian Jira boards with full Bitbucket PR approval data — so you can tell at a glance which \"Review\" tickets are actually ready to merge, without clicking into each one.",
       "show": true
     },
+    "Mobile Dev Bypass": {
+      "title": "Mobile Dev Bypass",
+      "stack": [],
+      "url": "https://github.com/T5-labs/LocalMobileCMMS",
+      "description": "A lifecycle script that patches Angular and ASP.NET Core source files in a `cmms-api` checkout to bypass MSAL authentication on both the front-end and back-end, resolves a real CMMS DB user identity (including effective permissions), exposes `ng serve` on the LAN via WSL mirrored networking, and restores all originals on exit — so you can load the CMMS app on a phone over your laptop's Wi-Fi without a Microsoft sign-in.",
+      "show": true
+    },
     "CS449 P": {
       "title": "CS449 P",
       "stack": [
