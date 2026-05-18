@@ -27,6 +27,13 @@
       "description": "Use a Raspberry Pi to capture and record the stream of many USB camera(s) and interact with relay devices in a mobile environment. Spring 2021.",
       "show": false
     },
+    "Project Maximus (V3)": {
+      "title": "Project Maximus (V3)",
+      "stack": [],
+      "url": "https://github.com/lxrbckl-dev/Project-Maximus/tree/V3",
+      "description": "Qt 6 + QML in-car diagnostics dashboard for a 2021 Mazda CX-5 Turbo.",
+      "show": false
+    },
     "Project Domum": {
       "title": "Project Domum",
       "stack": [
