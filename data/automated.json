@@ -717,38 +717,11 @@
       "description": "Website build for Showalter Services — Sawyer Showalter's lawn care / yard work business. Replaces a dead Linktree trial QR on `showalter.business`.",
       "show": false
     },
-    "TorchPass": {
-      "title": "TorchPass",
-      "stack": [],
-      "url": "https://github.com/T5-labs/Project-TorchPass/tree/fix/swe-3/revert-subcard-tints",
-      "description": "Internal web application for managing on-call support handoff checklists.",
-      "show": false
-    },
-    "Project-TorchPass": {
-      "title": "Project-TorchPass",
-      "stack": [],
-      "url": "https://github.com/T5-labs/Project-TorchPass/tree/feat/swe-2/phase-4-handoff-form",
-      "show": false
-    },
-    "Project SWT": {
-      "title": "Project SWT",
-      "stack": [],
-      "url": "https://github.com/T5-labs/Project-SWT/tree/claude/devcontainer-ci-automation-ySal6",
-      "description": "A multi-agent development team you deploy from any repo to collaboratively work on Jira tickets. Spring 2026.",
-      "show": false
-    },
     "EnhanceJira": {
       "title": "EnhanceJira",
       "stack": [],
       "url": "https://github.com/T5-labs/EnhanceJira",
       "description": "A Chrome extension that enhances Atlassian Jira boards with full Bitbucket PR approval data — so you can tell at a glance which \"Review\" tickets are actually ready to merge, without clicking into each one.",
-      "show": true
-    },
-    "Mobile Dev Bypass": {
-      "title": "Mobile Dev Bypass",
-      "stack": [],
-      "url": "https://github.com/T5-labs/LocalMobileCMMS",
-      "description": "A lifecycle script that patches Angular and ASP.NET Core source files in a `cmms-api` checkout to bypass MSAL authentication on both the front-end and back-end, resolves a real CMMS DB user identity (including effective permissions), exposes `ng serve` on the LAN via WSL mirrored networking, and restores all originals on exit — so you can load the CMMS app on a phone over your laptop's Wi-Fi without a Microsoft sign-in.",
       "show": true
     },
     "CS449 P": {
