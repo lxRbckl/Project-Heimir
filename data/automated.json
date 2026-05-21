@@ -724,6 +724,12 @@
       "description": "A Chrome extension that enhances Atlassian Jira boards with full Bitbucket PR approval data — so you can tell at a glance which \"Review\" tickets are actually ready to merge, without clicking into each one.",
       "show": true
     },
+    ".github": {
+      "title": ".github",
+      "stack": [],
+      "url": "https://github.com/T5-labs/.github",
+      "show": true
+    },
     "CS449 P": {
       "title": "CS449 P",
       "stack": [
