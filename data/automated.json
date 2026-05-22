@@ -724,6 +724,13 @@
       "description": "A Chrome extension that enhances Atlassian Jira boards with full Bitbucket PR approval data — so you can tell at a glance which \"Review\" tickets are actually ready to merge, without clicking into each one.",
       "show": true
     },
+    "Project-Merkle": {
+      "title": "Project-Merkle",
+      "stack": [],
+      "url": "https://github.com/T5-labs/Project-Merkle",
+      "description": "Project Goal",
+      "show": true
+    },
     ".github": {
       "title": ".github",
       "stack": [],
