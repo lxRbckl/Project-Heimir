@@ -744,6 +744,27 @@
       "url": "https://github.com/T5-labs/.github",
       "show": true
     },
+    "JiraLinker": {
+      "title": "JiraLinker",
+      "stack": [
+        "CMMS-####",
+        "MCP-####",
+        ".",
+        ",",
+        ")",
+        "!",
+        "?",
+        ":",
+        "/",
+        "CMMS-2747",
+        "https://herzog.atlassian.net/browse/CMMS-2747",
+        "(CMMS-2747)",
+        "CMMS-2747!"
+      ],
+      "url": "https://github.com/T5-labs/JiraLinker",
+      "description": "Type a Jira ticket like `CMMS-2747`, hit space, and it instantly becomes a clickable link to that ticket — **in any app on Windows** (Teams, Outlook, Slack, Word, …).",
+      "show": true
+    },
     "CS449 P": {
       "title": "CS449 P",
       "stack": [
@@ -954,6 +975,19 @@
     "Drizzle",
     "Better Auth",
     "oRPC",
-    "showalter.business"
+    "showalter.business",
+    "CMMS-####",
+    "MCP-####",
+    ".",
+    ",",
+    ")",
+    "!",
+    "?",
+    ":",
+    "/",
+    "CMMS-2747",
+    "https://herzog.atlassian.net/browse/CMMS-2747",
+    "(CMMS-2747)",
+    "CMMS-2747!"
   ]
 }
