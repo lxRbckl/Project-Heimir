@@ -672,9 +672,7 @@
         "Vite",
         "Tailwind CSS",
         "PostgreSQL",
-        "Drizzle",
-        "Better Auth",
-        "oRPC"
+        "Drizzle"
       ],
       "url": "https://github.com/lxrbckl-dev/reactive-resume/tree/fix/swe-3/dependabot-vuln-remediation",
       "description": "A forked, stable release of reactive-resume, for the sake of consistency. Spring 2026.",
@@ -703,9 +701,7 @@
     },
     "Project Showalter": {
       "title": "Project Showalter",
-      "stack": [
-        "showalter.business"
-      ],
+      "stack": [],
       "url": "https://github.com/lxrbckl-dev/Project-Showalter/tree/test/swe-2/fix-e2e-flakiness",
       "description": "Booking + CMS site for Showalter Services — Sawyer Showalter's lawn care /",
       "show": false
@@ -746,21 +742,7 @@
     },
     "JiraLinker": {
       "title": "JiraLinker",
-      "stack": [
-        "CMMS-####",
-        "MCP-####",
-        ".",
-        ",",
-        ")",
-        "!",
-        "?",
-        ":",
-        "/",
-        "CMMS-2747",
-        "https://herzog.atlassian.net/browse/CMMS-2747",
-        "(CMMS-2747)",
-        "CMMS-2747!"
-      ],
+      "stack": [],
       "url": "https://github.com/T5-labs/JiraLinker",
       "description": "Type a Jira ticket like `CMMS-2747`, hit space, and it instantly becomes a clickable link to that ticket — **in any app on Windows** (Teams, Outlook, Slack, Word, …).",
       "show": true
@@ -972,22 +954,6 @@
     "Vite",
     "Tailwind CSS",
     "PostgreSQL",
-    "Drizzle",
-    "Better Auth",
-    "oRPC",
-    "showalter.business",
-    "CMMS-####",
-    "MCP-####",
-    ".",
-    ",",
-    ")",
-    "!",
-    "?",
-    ":",
-    "/",
-    "CMMS-2747",
-    "https://herzog.atlassian.net/browse/CMMS-2747",
-    "(CMMS-2747)",
-    "CMMS-2747!"
+    "Drizzle"
   ]
 }

@@ -1,3 +1,4 @@
+import { readFileSync } from 'fs';
 import { schedule } from 'node-cron';
 import { GitHubClient } from './octokit.js';
 import { RepositoryDetails } from './interfaces.js';
@@ -25,6 +26,21 @@ async function main() {
   const repositoryOwner = process.env.REPOSITORY_OWNER!;
   const targetRepository = process.env.TARGET_REPOSITORY!;
   const usernames = process.env.USERNAMES!.split(',').map(item => item.trim());
+
+  // Explicit keyword exclusions. data/exclude.json is a hand-curated JSON array
+  // of exact-match strings; any extracted language/package equal to one of them
+  // is dropped (from the global lists AND per-repo stacks). This keeps READMEs'
+  // non-package backtick tokens (Jira IDs, punctuation, URLs, etc.) out of the
+  // published stack. Missing/unreadable/invalid file → nothing excluded.
+  let excludeSet = new Set<string>();
+  try {
+    const parsed = JSON.parse(readFileSync('data/exclude.json', 'utf-8'));
+    if (Array.isArray(parsed)) {
+      excludeSet = new Set<string>(parsed.map((s: string) => String(s).trim()));
+    }
+  } catch {
+    // no exclude list configured — proceed without exclusions
+  }
 
 
   async function processRepositories() {
@@ -78,8 +94,10 @@ async function main() {
         const languageRegex = new RegExp(Regex.LANGUAGE, 'g');
         let langMatch;
         while ((langMatch = languageRegex.exec(stackLine || '')) !== null) {
-          languages.add(langMatch[1].trim());
-          techStack.language.add(langMatch[1].trim());
+          const lang = langMatch[1].trim();
+          if (excludeSet.has(lang)) continue;
+          languages.add(lang);
+          techStack.language.add(lang);
         }
 
         const stack: string[] = [];
@@ -87,6 +105,7 @@ async function main() {
         let match;
         while ((match = packageRegex.exec(stackLine || '')) !== null) {
           const item = match[1].trim();
+          if (excludeSet.has(item)) continue;
           stack.push(item);
           if (!languages.has(item)) {
             techStack.package.add(item);
