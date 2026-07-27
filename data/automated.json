@@ -720,6 +720,16 @@
       "description": "A multi-agent development team you deploy from any repo to collaboratively work on Jira tickets. Spring 2026.",
       "show": false
     },
+    "Project-Mandrake": {
+      "title": "Project-Mandrake",
+      "stack": [
+        "mandrake",
+        "~/.mandrake/config.json"
+      ],
+      "url": "https://github.com/T5-labs/Project-Mandrake",
+      "description": "A containerized MSSQL database host **and full dev-stack runner** for CMMS development. Brings up a SQL Server 2022 container with a production-like baseline so you can run EF migrations, test schema changes, and snapshot/restore database state — all without touching your host SQL Server — and (via `mandrake up` / autopilot / the VS Code extension) wires the cmms-api clone to it and launches the frontend + backend dev servers.",
+      "show": true
+    },
     "EnhanceJira": {
       "title": "EnhanceJira",
       "stack": [],
@@ -954,6 +964,8 @@
     "Vite",
     "Tailwind CSS",
     "PostgreSQL",
-    "Drizzle"
+    "Drizzle",
+    "mandrake",
+    "~/.mandrake/config.json"
   ]
 }
