@@ -16,15 +16,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lxrbckl-dev/Project-Heimir.git"
+    "url": "git+https://github.com/lxrbckl-labs/Project-Heimir.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lxrbckl-dev/Project-Heimir/issues"
+    "url": "https://github.com/lxrbckl-labs/Project-Heimir/issues"
   },
-  "homepage": "https://github.com/lxrbckl-dev/Project-Heimir#readme",
+  "homepage": "https://github.com/lxrbckl-labs/Project-Heimir#readme",
   "dependencies": {
     "node-cron": "^4.2.1",
     "octokit": "^5.0.5"

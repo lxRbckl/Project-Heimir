@@ -20,7 +20,7 @@ docker run \
   --restart unless-stopped \
   -e TARGET_BRANCH=V3 \
   -e CRON_SCHEDULE="0 0 * * *" \
-  -e REPOSITORY_OWNER=lxrbckl-dev \
+  -e REPOSITORY_OWNER=lxrbckl-labs \
   -e TARGET_FILE="data/automated.json" \
   -e TARGET_REPOSITORY=Project-SelfStack \
   -e COMMIT_MESSAGE="Project SelfStack - Automated Data Collection" \
